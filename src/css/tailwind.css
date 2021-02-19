@@ -4,10 +4,6 @@
 
 @layer components {
 
-    main {
-        scroll-behavior: smooth;
-    }
-
     .article {
         @apply w-full mb-6 lg:w-1/3 md:w-1/2 md:pl-2 lg:px-2 lg:mb-0;
     }
@@ -97,7 +93,7 @@
         left: 0px !important;
         right: 0px !important;
         top: 0px !important;
-        z-index: 3 !important;
+        z-index: 20 !important;
         padding:1rem;
         margin-left:auto;
         margin-right:auto;

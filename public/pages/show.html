@@ -331,8 +331,9 @@
                             <p class="text-base font-normal">I live in the heart of Camden Town, in a late Georgian
                                 terrace
                                 of houses within a Conservation area, right in the centre of London. <span
-                                    class="text-gray-600 underline"> <a href="#">read more</a></span>
+                                    class="text-gray-600 underline">Read more </span>
                             </p>
+                            x
 
                             <div class="pt-4">
                                 <a href="#" class="text-lg font-semibold underline">Contact host</a>
@@ -528,9 +529,10 @@
                 </div>
 
                 <div
-                    class="sticky hidden w-1/3 py-8 mt-10 text-gray-900 bg-white border border-gray-300 shadow-xl lg:px-8 md:w-2/5 md:ml-10 lg:ml-20 lg:mr-5 md:p-4 top-16 lg:block md:block rounded-xl">
+                    class="sticky hidden w-1/3 py-6 mt-10 text-gray-900 bg-white border border-gray-300 shadow-xl lg:px-6 md:w-2/5 md:ml-10 lg:ml-20 lg:mr-5 md:p-4 top-16 lg:block md:block rounded-xl">
                     <div class="flex items-center justify-between my-3">
-                        <p class="text-xl font-semibold text">$104<span class="text-lg font-normal"> / night</span></p>
+                        <p class="text-lg font-semibold text">$104<span class="text-base font-normal"> / night</span>
+                        </p>
 
                         <ol class="flex flex-row text-lg font-normal text-gray-700">
                             <li class="flex items-center justify-start">
@@ -539,7 +541,9 @@
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <p class="text-sm text-gray-600 lg:text-sm"><span class="font-bold">4.84 </span> (455)
+                                <p class="text-sm text-gray-600 lg:text-sm">
+                                    <span class="font-bold">4.84 </span>
+                                    (455)
                                 </p>
                             </li>
                         </ol>
@@ -547,13 +551,14 @@
 
                     <form action="#" class="w-full">
                         <div class="flex flex-row">
-                            <input type="text" class="w-1/2 p-4 border-t border-l border-gray-500 rounded-tl-lg"
+                            <input type="text" class="w-1/2 px-4 py-3 border-t border-l border-gray-600 rounded-tl-lg"
                                 placeholder="check in">
                             <input type="text"
-                                class="w-1/2 p-4 border-t border-l border-r border-gray-500 rounded-tr-lg"
+                                class="w-1/2 px-4 py-3 border-t border-l border-r border-gray-600 rounded-tr-lg"
                                 placeholder="check out">
                         </div>
-                        <select name="" id="" class="w-full p-4 border border-gray-500 rounded-bl-lg rounded-br-lg">
+                        <select name="" id=""
+                            class="w-full px-4 py-3 border border-gray-600 rounded-bl-lg rounded-br-lg">
                             <option value="">1 guest</option>
                             <option value="">2 guests</option>
                             <option value="">3 guests</option>
@@ -768,7 +773,7 @@
             </section>
         </div>
 
-        <section id="contact" class="w-full px-5 py-10 bg-gray-50 md:px-0">
+        <section id="contact" class="w-full px-5 py-10 border-b border-gray-300 bg-gray-50 md:px-0">
 
             <div class="flex flex-col items-start justify-start w-full max-w-5xl mx-auto md:px-10 lg:px-0 lg:mx-auto">
                 <div
@@ -886,114 +891,126 @@
 
         <section class="w-full px-5 py-10 bg-gray-50 md:px-0 ">
 
-            <div class="relative max-w-5xl swiper-container">
-
+            <div class="relative w-full max-w-5xl mx-auto space-y-4 md:px-10 lg:px-0 lg:mx-auto">
                 <h4 class="flex text-xl font-semibold text-gray-900">More places to stay</h4>
-                <div class="flex items-start lg:my-2 swiper-wrapper">
+                <div class="flex items-start lg:my-2 swiper-container">
 
-                    <a href="../pages/show.html" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
-                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
-                            <img src="/assets/images/5.jpg" alt=""
-                                class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
-                        </div>
+                    <div class="swiper-wrapper">
+                        <a href="../pages/show.html" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                                <img src="/assets/images/5.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
 
-                        <div class="flex items-center justify-start my-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
-                                viewBox="0 0 20 20" fill="#ffb400">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <p class="text-sm text-gray-600 lg:text-sm"> 4.84 (5)</p>
-                        </div>
-                        <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
-                            <li class="mr-1">Entire home/apt </li>
-                            <li> <span> . </span>House </li>
-                        </ol>
-                        <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Newly refurbished bright and neat
-                        </h4>
-                        <p class="text-sm font-semibold text">$104<span class="text-base font-normal"> / night</span>
-                        </p>
-                        <button
-                            class="absolute px-2 py-1 text-xs font-bold text-center text-gray-700 uppercase transition bg-gray-100 border-transparent rounded-sm focus:outline-none ring-offset-transparent hover:shadow-sm hover:bg-white top-2 left-2 lg:left-4 hover:text-black">
-                            Superhost
-                        </button>
-                    </a>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                    viewBox="0 0 20 20" fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.84 (5)</p>
+                            </div>
+                            <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
+                                <li class="mr-1">Entire home/apt </li>
+                                <li> <span> . </span>House </li>
+                            </ol>
+                            <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Newly refurbished bright and neat
+                            </h4>
+                            <p class="text-sm font-semibold text">$104<span class="text-base font-normal"> /
+                                    night</span>
+                            </p>
+                            <button
+                                class="absolute px-2 py-1 text-xs font-bold text-center text-gray-700 uppercase transition bg-gray-100 border-transparent rounded-sm focus:outline-none ring-offset-transparent hover:shadow-sm hover:bg-white top-2 left-2 lg:left-4 hover:text-black">
+                                Superhost
+                            </button>
+                        </a>
 
-                    <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
-                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
-                            <img src="/assets/images/20.jpg" alt=""
-                                class="absolute object-cover w-full h-full rounded-lg shadow-sm">
-                        </div>
+                        <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                                <img src="/assets/images/20.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm">
+                            </div>
 
-                        <div class="flex items-center justify-start my-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
-                                viewBox="0 0 20 20" fill="#ffb400">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (27)</p>
-                        </div>
-                        <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
-                            <li class="mr-1">Hotel room</li>
-                            <li> <span> . </span>3 beds </li>
-                        </ol>
-                        <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Superior triple rooms</h4>
-                        <p class="text-sm font-semibold text">$158<span class="text-base font-normal"> / night</span>
-                        </p>
-                    </a>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                    viewBox="0 0 20 20" fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (27)</p>
+                            </div>
+                            <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
+                                <li class="mr-1">Hotel room</li>
+                                <li> <span> . </span>3 beds </li>
+                            </ol>
+                            <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Superior triple rooms</h4>
+                            <p class="text-sm font-semibold text">$158<span class="text-base font-normal"> /
+                                    night</span>
+                            </p>
+                        </a>
 
-                    <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
-                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
-                            <img src="/assets/images/22.jpg" alt=""
-                                class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
-                        </div>
+                        <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                                <img src="/assets/images/22.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
 
-                        <div class="flex items-center justify-start my-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
-                                viewBox="0 0 20 20" fill="#ffb400">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <p class="text-sm text-gray-600 lg:text-sm"> 4.84 (5)</p>
-                        </div>
-                        <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
-                            <li class="mr-1">hostel room</li>
-                            <li> <span> . </span>6 beds </li>
-                        </ol>
-                        <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Private 6 beds entire room</h4>
-                        <p class="text-sm font-semibold text">$218<span class="text-base font-normal"> / night</span>
-                        </p>
-                    </a>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                    viewBox="0 0 20 20" fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.84 (5)</p>
+                            </div>
+                            <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
+                                <li class="mr-1">hostel room</li>
+                                <li> <span> . </span>6 beds </li>
+                            </ol>
+                            <h4 class="text-sm font-normal text-gray-700 line-clamp-1">Private 6 beds entire room</h4>
+                            <p class="text-sm font-semibold text">$218<span class="text-base font-normal"> /
+                                    night</span>
+                            </p>
+                        </a>
 
-                    <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
-                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
-                            <img src="/assets/images/21.jpg" alt=""
-                                class="absolute object-cover w-full h-full rounded-lg shadow-sm">
-                        </div>
+                        <a href="#" class="relative w-full swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                                <img src="/assets/images/21.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm">
+                            </div>
 
-                        <div class="flex items-center justify-start my-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
-                                viewBox="0 0 20 20" fill="#ffb400">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                            <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (27)</p>
-                        </div>
-                        <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
-                            <li class="mr-1">Room in apparthotel</li>
-                            <li> <span> . </span>1 bed</li>
-                        </ol>
-                        <h4 class="text-sm font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
-                        <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> / night</span>
-                        </p>
-                    </a>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                    viewBox="0 0 20 20" fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (27)</p>
+                            </div>
+                            <ol class="flex flex-row text-sm font-normal leading-none text-gray-700">
+                                <li class="mr-1">Room in apparthotel</li>
+                                <li> <span> . </span>1 bed</li>
+                            </ol>
+                            <h4 class="text-sm font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
+                            <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> /
+                                    night</span>
+                            </p>
+                        </a>
+                    </div>
                 </div>
                 <!-- If we need navigation buttons -->
-                <div class="absolute flex flex-row-reverse top-6 right-10">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                <div class="absolute right-0 top-2">
+                    <div
+                        class="p-5 bg-gray-900 border-2 border-gray-100 rounded-full shadow-sm swiper-button-white focus:outline-none swiper-button-next bg-opacity-70 ">
+                    </div>
+                </div>
+                <div class="absolute top-2 right-28">
+                    <div
+                        class="p-5 bg-gray-900 border-2 border-gray-100 rounded-full shadow-sm swiper-button-white focus:outline-none swiper-button-prev bg-opacity-70">
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
 
@@ -1125,7 +1142,7 @@ C480.224,136.96,497.728,118.496,512,97.248z" />
 
     <!--Only on mobile sticky banner bottom-->
     <section
-        class="sticky bottom-0 left-0 right-0 flex flex-row items-center justify-between px-5 py-4 bg-white border-t border-gray-300 md:hidden lg:hidden">
+        class="sticky bottom-0 left-0 right-0 z-50 flex flex-row items-center justify-between px-5 py-4 bg-white border-t border-gray-300 md:hidden lg:hidden">
         <div class="flex items-center">
             <ol class="block text-lg font-normal text-gray-700">
                 <li class="flex items-center justify-start">
@@ -1156,20 +1173,18 @@ C480.224,136.96,497.728,118.496,512,97.248z" />
     <script>
         const swiper = new Swiper('.swiper-container', {
             breakpoints: {
-                // when window width is >= 220px
+                // when window width is >= breakpoint
                 220: {
-                    slidesPerView: '1',
+                    slidesPerView: 'auto',
                     spaceBetween: 5,
-
                 },
-                // when window width is >= 640px
                 640: {
                     slidesPerView: 3,
-                    spaceBetween: 10
+                    spaceBetween: 5
                 },
-                768: {
+                960: {
                     slidesPerView: 4,
-                    spaceBetween: 10
+                    spaceBetween: 5
                 },
             },
             pagination: {
@@ -1179,8 +1194,7 @@ C480.224,136.96,497.728,118.496,512,97.248z" />
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-
+            }
         });
     </script>
 

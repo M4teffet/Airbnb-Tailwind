@@ -121,5 +121,35 @@
         border-bottom: 2px solid #000;
         padding-bottom:20px;
     }
+    
 
+    .btn {
+        box-sizing: border-box;
+        cursor: pointer !important; 
+        display: inline-block !important;
+        margin: 0px !important;
+        position: relative !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        width: auto !important;
+        touch-action: manipulation !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        outline: none !important;
+        padding: 13px 23px !important;
+        border-color: rgb(34, 34, 34) !important;
+        background: rgb(255, 255, 255) !important;
+        color: rgb(34, 34, 34) !important;
+        transition: all 0s ease 0s !important;
+    }
+
+    .btn:hover {
+        border-color: rgb(0, 0, 0) !important;
+        background: rgb(247, 247, 247) !important;
+        color: rgb(34, 34, 34) !important;
+    }
 }

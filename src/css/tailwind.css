@@ -152,4 +152,13 @@
         background: rgb(247, 247, 247) !important;
         color: rgb(34, 34, 34) !important;
     }
+
+    .nav-btn {
+        @apply p-5 bg-gray-900 border-2 border-gray-100 rounded-full shadow-sm focus:outline-none bg-opacity-60;
+    }
+
+    .filter-btn {
+        @apply hidden px-4 py-2 mb-6 font-normal border border-gray-300 rounded-l-full rounded-r-full lg:block md:block hover:border-gray-600;
+    }
+
 }

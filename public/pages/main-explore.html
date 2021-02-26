@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../src/css/tailwind.css" rel="stylesheet">
+
+    <!--Swiper resources-->
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <script src="../assets/js/app.js"></script>
+
+    <title>Vacation rentals in Ghana</title>
+</head>
+
+<body class="antialiased text-gray-700">
+
+    <header class="max-w-6xl px-5 mx-auto">
+        <nav class="flex items-start justify-between py-5 lg:mb-0 md:mb-0">
+            <a href="/">
+                <h1>
+                    <span class="sr-only"> Airbnb </span>
+                    <svg viewBox="0 0 1000 1000" role="img" aria-hidden="false" aria-label="Home" focusable="false"
+                        style="display:block;fill:currentColor;color: #FF385C;" class="w-7 h-7">
+                        <path
+                            d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+                        </path>
+                    </svg>
+                </h1>
+            </a>
+
+            <div class="space-x-6 text-xs font-bold">
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+            </div>
+        </nav>
+
+        <div class="relative flex items-center justify-start">
+
+            <div class="hidden md:block lg:block">
+
+
+                <img alt="Vacation rentals in Ghana" src="../assets/images/banner.webp" loading="lazy" importance="high"
+                    sizes="100vw" class="explorer_banner rounded-xl">
+
+            </div>
+
+            <div
+                class="flex flex-col flex-initial w-full max-w-xl py-4 space-y-1 bg-white md:absolute lg:absolute lg:border-gray-100 md:border-gray-100 lg:border md:border md:shadow-xl lg:shadow-xl md:rounded-xl lg:rounded-xl lg:py-5 lg:px-6 md:px-6 md:w-100 lg:w-100">
+
+                <h1 class="text-xl font-bold lg:text-3xl md:text-3xl">Vacation rentals in Ghana</h1>
+                <p class="text-gray-500">Find and book unique accommodations on Airbnb</p>
+
+                <form action="#" class="pt-1 pb-2">
+                    <div class="input">
+                        <label for="location" class="flex flex-col">
+                            <span class="font-bold uppercase text-xxs">Location</span>
+                            <input type="text" aria-autocomplete="list" aria-expanded="false" placeholder="Anywhere"
+                                value="Kumasi, Ashanti Region"
+                                class="py-0 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent border-0 outline-none">
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <div class="flex divide-x">
+                            <label for="location" class="flex flex-col w-1/2">
+                                <span class="font-bold uppercase text-xxs">Check in</span>
+                                <input type="date" aria-autocomplete="list" aria-expanded="false"
+                                    aria-placeholder="Add date" placeholder="Add date"
+                                    class="pr-5 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent border-0 outline-none">
+                            </label>
+                            <label for="location" class="flex flex-col w-1/2 pl-5">
+                                <span class="font-bold uppercase text-xxs">Check out</span>
+                                <input type="date" aria-autocomplete="list" aria-expanded="false" placeholder="Add date"
+                                    class="py-0 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent border-0 outline-none">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <div class="flex divide-x">
+                            <label for="location" class="flex flex-col w-1/2 pr-5">
+                                <span class="font-bold uppercase text-xxs">Adults</span>
+                                <select id="guest"
+                                    class="box-border w-full mr-0 text-sm font-medium text-gray-500 no-underline bg-transparent bg-white border-0 outline-none">
+                                    <option value="o">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </label>
+                            <label for="location" class="flex flex-col w-1/2 pl-5">
+                                <span class="font-bold uppercase text-xxs">Children</span>
+                                <select id="guest"
+                                    class="w-full py-0 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent bg-white border-0 outline-none">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center py-1">
+                        <button
+                            class="w-full px-4 py-2 text-base font-medium text-white rounded-lg bg-gradient-to-r from-red-600 to-pink-700">
+                            <span class="flex items-center justify-center space-x-1">
+                                <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false"
+                                    style="height:12px;width:12px;display:block;fill:currentColor;margin-right: 5px;">
+                                    <path
+                                        d="m2.5 7c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5m13.1 6.9-2.8-2.9c.7-1.1 1.2-2.5 1.2-4 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.5 0 2.9-.5 4-1.2l2.9 2.8c.2.3.5.4.9.4.3 0 .6-.1.8-.4.5-.5.5-1.2 0-1.7">
+                                    </path>
+                                </svg>Search
+                            </span>
+
+                        </button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main></main>
+
+    <!--Footer-->
+    <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
+        <div class="max-w-5xl px-4 pb-8 mx-auto border-b border-gray-300 lg:px-0">
+            <div class="flex flex-wrap items-start justify-start">
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Airbnb</h5>
+                    <ul class="leading-loose">
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Careers</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">News</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Policies</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">help</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Diversity &
+                                Belonging</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Discover</h5>
+                    <ul class="leading-loose">
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Trust & Safety</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Travel Credit</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Gift Cards</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Airbnb Citizen</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Business Travel</a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Things To Do <span
+                                    class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Business Travel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Hosting</h5>
+                    <ul class="leading-loose">
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Why Host</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Hospitality</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Responsible Hosting</a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Community Center</a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Host an Experience
+                                <span class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Open House</a>
+                        </li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Donations <span
+                                    class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="flex items-start justify-start mb-2 font-semibold tex-gray-700">
+                        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="w-3 h-3 mr-2 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-6.932 0-5.046 7.85-5.322 9h-3.487v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z"
+                                fill="#3b5999" />
+                        </svg>
+                        <svg viewBox="0 0 512.00096 512.00096" class="w-3 h-3 mr-2 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0" />
+                            <path
+                                d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0" />
+                            <path
+                                d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" />
+                        </svg>
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" class="w-3 h-3 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path style="fill:#03A9F4;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+        c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+        C480.224,136.96,497.728,118.496,512,97.248z" />
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+
+                    </h5>
+                    <ul class="leading-loose">
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Terms</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Pricacy</a></li>
+                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center max-w-5xl p-4 mx-auto lg:px-0">
+            <p class="pl-2 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

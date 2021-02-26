@@ -15,7 +15,11 @@ module.exports = {
                 '2/3': '66.666667%'
             },
             maxWidth: {
-                'xxs': '15rem'
+                'xxs': '15rem',
+                '3/4': '75%',
+            },
+            width: {
+                '100': '24rem'
             }
         },
     },

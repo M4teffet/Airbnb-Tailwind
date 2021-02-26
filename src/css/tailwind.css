@@ -4,6 +4,11 @@
 
 @layer components {
 
+    .text-xxs {
+        font-size: 0.55rem;
+        line-height: 0.7rem;
+    }
+
     .article {
         @apply w-full mb-6 lg:w-1/3 md:w-1/2 md:pl-2 lg:px-2 lg:mb-0;
     }
@@ -12,11 +17,13 @@
         @apply block mb-2 text-xs font-semibold tracking-wide text-gray-900 uppercase;
     }
 
+
     .input {
-        @apply block w-full p-3 text-gray-800 placeholder-gray-400 border border-gray-300 rounded;
+        @apply w-full px-3 py-3 my-2 border border-gray-300 rounded-md;
     }
 
-    .input:focus {
+
+    .input:hover {
         @apply transition border-gray-400 shadow outline-none;
         background-clip: padding-box;
         box-shadow: 0 0 0 0.2rem theme('colors.gray.200');
@@ -24,10 +31,6 @@
 
     .input::placeholder {
         @apply text-gray-700;
-    }
-
-    .form-group {
-        @apply  w-full pr-2 mb-4 lg:w-1/3 lg:mb-1 md:w-1/3;
     }
 
     .sr-only {
@@ -159,6 +162,16 @@
 
     .filter-btn {
         @apply hidden px-4 py-2 mb-6 font-normal border border-gray-300 rounded-l-full rounded-r-full lg:block md:block hover:border-gray-600;
+    }
+
+    .explorer_banner {
+        max-width: 100% !important;
+        width: 75% !important;
+        object-fit: cover !important;
+        height: 100% !important;
+        margin-left: 25% !important;
+        border-radius: 8px !important;
+        min-height:477px !important;
     }
 
 }

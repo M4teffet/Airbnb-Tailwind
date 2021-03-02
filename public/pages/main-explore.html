@@ -16,7 +16,7 @@
 
 <body class="antialiased text-gray-700">
 
-    <header class="max-w-6xl px-5 mx-auto">
+    <header class="max-w-6xl px-5 mx-auto mb-10">
         <nav class="flex items-start justify-between py-5 lg:mb-0 md:mb-0">
             <a href="/">
                 <h1>
@@ -39,25 +39,21 @@
         <div class="relative flex items-center justify-start">
 
             <div class="hidden md:block lg:block">
-
-
                 <img alt="Vacation rentals in Ghana" src="../assets/images/banner.webp" loading="lazy" importance="high"
                     sizes="100vw" class="explorer_banner rounded-xl">
-
             </div>
 
             <div
-                class="flex flex-col flex-initial w-full max-w-xl py-4 space-y-1 bg-white md:absolute lg:absolute lg:border-gray-100 md:border-gray-100 lg:border md:border md:shadow-xl lg:shadow-xl md:rounded-xl lg:rounded-xl lg:py-5 lg:px-6 md:px-6 md:w-100 lg:w-100">
-
+                class="flex flex-col flex-initial w-full max-w-xl py-2 space-y-1 bg-white md:absolute lg:absolute lg:border-gray-100 md:border-gray-100 lg:border md:border md:shadow-xl lg:shadow-xl md:rounded-xl lg:rounded-xl lg:py-5 lg:px-6 md:px-6 md:w-100 lg:w-100">
                 <h1 class="text-xl font-bold lg:text-3xl md:text-3xl">Vacation rentals in Ghana</h1>
                 <p class="text-gray-500">Find and book unique accommodations on Airbnb</p>
 
-                <form action="#" class="pt-1 pb-2">
+                <form action="../pages/explore.html" class="pt-1 pb-2">
                     <div class="input">
                         <label for="location" class="flex flex-col">
                             <span class="font-bold uppercase text-xxs">Location</span>
                             <input type="text" aria-autocomplete="list" aria-expanded="false" placeholder="Anywhere"
-                                value="Kumasi, Ashanti Region"
+                                value="Accra, Greater Accra Region"
                                 class="py-0 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent border-0 outline-none">
                         </label>
                     </div>
@@ -122,10 +118,537 @@
                 </form>
             </div>
         </div>
-
     </header>
 
-    <main></main>
+    <main class="max-w-6xl px-5 mx-auto mb-8">
+        <section class="block mb-10">
+            <h2 class="text-xl font-semibold leading-snug lg:text-2xl md:text-2xl">Top-rated vacation rentals in Ghana
+            </h2>
+            <p class="text-base text-gray-500">Guests agree: these stays are highly rated for location, cleanliness, and
+                more.</p>
+
+            <!--Cards-->
+            <section class="flex flex-wrap items-start justify-between my-6 overflow-hidden lg:my-10">
+
+                <article class="article">
+                    <div class="relative bg-gray-200 rounded pb-1/2">
+                        <img src="/assets/images/1.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                    </div>
+                    <div class="flex items-center justify-start my-3 ">
+                        <ol
+                            class="flex flex-row flex-wrap items-center space-y-2 text-lg font-normal text-gray-700 lg:space-y-0 md:space-y-0">
+                            <li class="inline-flex mt-2 lg:mt-0 md:mt-0">
+                                <p class="text-xs text-gray-900 "> Entire condomnimum
+                                    <span class="mx-1 font-bold" aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">3 guests <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">2 beds <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="text-xs text-gray-500">3 baths
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="mb-5 text-sm font-medium leading-snug text-gray-700 transition line-clamp-4">
+                        <span class="font-bold">Hill view apartments </span>apartment sits on a hill with a serene
+                        breeze. A vehicle is available on request by guest.
+                    </p>
+
+                    <button class="btn-explore">
+                        <span class="font-medium">From / Night</span>
+                    </button>
+                </article>
+
+                <article class="article">
+                    <div class="relative bg-gray-200 rounded pb-1/2">
+                        <img src="/assets/images/2.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                    </div>
+                    <div class="flex items-center justify-start my-3 ">
+                        <ol
+                            class="flex flex-row flex-wrap items-center space-y-2 text-lg font-normal text-gray-700 lg:space-y-0 md:space-y-0">
+                            <li class="inline-flex mt-2 lg:mt-0 md:mt-0">
+                                <p class="text-xs text-gray-900 "> Entire condomnimum
+                                    <span class="mx-1 font-bold" aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">3 guests <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">2 beds <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="text-xs text-gray-500">3 baths
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="mb-5 text-sm font-medium leading-snug text-gray-700 transition line-clamp-4">
+                        <span class="font-bold">The Gallery Luxury suite 21 </span>The Gallery, highly rated by all our
+                        guests, is less than 10 minutes from the Airport and a walking distance from the Accra Mall. The
+                        rooftop swimming pool and relaxing areas on top of this high rise building give you a
+                        spectacular day and
+                    </p>
+
+                    <button class="btn-explore">
+                        <span class="font-medium">From / Night</span>
+                    </button>
+                </article>
+
+                <article class="article">
+                    <div class="relative bg-gray-200 rounded pb-1/2">
+                        <img src="/assets/images/3.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                    </div>
+                    <div class="flex items-center justify-start my-3 ">
+                        <ol
+                            class="flex flex-row flex-wrap items-center space-y-2 text-lg font-normal text-gray-700 lg:space-y-0 md:space-y-0">
+                            <li class="inline-flex mt-2 lg:mt-0 md:mt-0">
+                                <p class="text-xs text-gray-900 "> Entire condomnimum
+                                    <span class="mx-1 font-bold" aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">3 guests <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="ml-1 text-xs">2 beds <span class="mx-1 mb-1 font-bold"
+                                        aria-hidden="true">.</span>
+                                </p>
+                            </li>
+                            <li class="inline-flex text-sm font-normal text-gray-500">
+                                <p class="text-xs text-gray-500">3 baths
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="mb-5 text-sm font-medium leading-snug text-gray-700 transition line-clamp-4">
+                        <span class="font-bold">Modern 1-bedroom apartment in The Ivy, East Legon </span>The Ivy is a
+                        brand-new luxurious apartment complex located just behind the lively Lagos Avenue in East Legon.
+                        Facilities include a top-floor gym overlooking Legon, a pool deck with Jacuzzi, parking
+                        facilities, 24/7 guards and protection. The 1-bedroom
+                    </p>
+
+                    <button class="btn-explore">
+                        <span class="font-medium">From / Night</span>
+                    </button>
+                </article>
+            </section>
+        </section>
+
+        <section class="block mb-10">
+            <h2 class="text-xl font-semibold leading-snug lg:text-2xl md:text-2xl">Vacation rentals for every style</h2>
+            <p class="text-base text-gray-500">Get the amount of space that is right for you</p>
+
+            <!--Cards-->
+            <section class="flex flex-wrap items-start justify-between my-6 overflow-hidden lg:my-10">
+
+                <article class="article">
+                    <a href="#">
+                        <div class="relative bg-gray-200 rounded pb-1/1">
+                            <img src="/assets/images/30.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                        </div>
+
+                        <div class="mt-2 text-base space-y">
+                            <p class="font-bold">Homes</p>
+                            <p class="text-gray-500">Comfortable places with all the essentials</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a href="#">
+                        <div class="relative bg-gray-200 rounded pb-1/1">
+                            <img src="/assets/images/31.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                        </div>
+
+                        <div class="mt-2 text-base space-y">
+                            <p class="font-bold">Hotels</p>
+                            <p class="text-gray-500">Stylish accommodations and amenities</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="article">
+                    <a href="#">
+                        <div class="relative bg-gray-200 rounded pb-1/1">
+                            <img src="/assets/images/32.jpg" alt="" class="absolute object-cover w-full h-full rounded">
+                        </div>
+
+                        <div class="mt-2 text-base space-y">
+                            <p class="font-bold">Unique Stays</p>
+                            <p class="text-gray-500">Spaces that are more than just a place to sleep</p>
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <!--Cards-->
+        <section class="relative block my-6 lg:my-10 swiper-container">
+            <h2 class="text-xl font-semibold leading-snug lg:text-2xl md:text-2xl">Popular amenities for Ghana
+                vacation rentals
+            </h2>
+
+            <ul class="flex justify-start py-5 space-x-4 swiper-wrapper">
+                <li
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
+                            role="presentation" focusable="false">
+                            <path
+                                d="M26 1a5 5 0 0 1 5 5c0 6.389-1.592 13.187-4 14.693V31h-2V20.694c-2.364-1.478-3.942-8.062-3.998-14.349L21 6l.005-.217A5 5 0 0 1 26 1zm-9 0v18.118c2.317.557 4 3.01 4 5.882 0 3.27-2.183 6-5 6s-5-2.73-5-6c0-2.872 1.683-5.326 4-5.882V1zM2 1h1c4.47 0 6.934 6.365 6.999 18.505L10 21H3.999L4 31H2zm14 20c-1.602 0-3 1.748-3 4s1.398 4 3 4 3-1.748 3-4-1.398-4-3-4zM4 3.239V19h3.995l-.017-.964-.027-.949C7.673 9.157 6.235 4.623 4.224 3.364l-.12-.07zm19.005 2.585L23 6l.002.31c.045 4.321 1.031 9.133 1.999 11.39V3.17a3.002 3.002 0 0 0-1.996 2.654zm3.996-2.653v14.526C27.99 15.387 29 10.4 29 6a3.001 3.001 0 0 0-2-2.829z">
+                            </path>
+                        </svg></span>
+                    <span>Kitchen</span>
+                </li>
+                <li
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
+                            role="presentation" focusable="false">
+                            <path
+                                d="M16 20a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0-7a9 9 0 0 1 8.043 4.958L22.53 21.47a7.003 7.003 0 0 0-13.058 0l-1.514-1.514A9 9 0 0 1 16 15zm0-5c4.89 0 9.193 2.506 11.697 6.304l-1.45 1.45A11.993 11.993 0 0 0 16 12c-4.339 0-8.14 2.302-10.247 5.752l-1.45-1.449A13.987 13.987 0 0 1 16 10zm0-5c6.267 0 11.826 3.034 15.286 7.714l-1.432 1.432C26.773 9.821 21.716 7 16 7 10.285 7 5.228 9.82 2.146 14.145L.714 12.714C4.174 8.034 9.733 5 16 5z">
+                            </path>
+                        </svg></span>
+                    <span>Wifi</span>
+                </li>
+                <li
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
+                            role="presentation" focusable="false">
+                            <path
+                                d="M24 26c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 27.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 28c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 28c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 28c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 29.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 26c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 26c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 26zm0-5c.988 0 1.945.351 2.671 1.009.306.276.71.445 1.142.483L28 22.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 23c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 23c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 23c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 24.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 21c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492A3.974 3.974 0 0 1 16 21c.988 0 1.945.351 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.491A3.975 3.975 0 0 1 23.999 21zM20 3a4 4 0 0 1 3.995 3.8L24 7v2h4v2h-4v5c.912 0 1.798.3 2.5.862l.171.147c.306.276.71.445 1.142.483L28 17.5v2l-.228-.006a3.96 3.96 0 0 1-2.443-1.003A1.978 1.978 0 0 0 24 18c-.502 0-.978.175-1.328.491a3.977 3.977 0 0 1-2.67 1.009 3.977 3.977 0 0 1-2.672-1.009A1.978 1.978 0 0 0 16 18c-.503 0-.98.175-1.329.491a3.978 3.978 0 0 1-2.67 1.009 3.978 3.978 0 0 1-2.672-1.008A1.978 1.978 0 0 0 8 18c-.503 0-.98.175-1.33.491a3.96 3.96 0 0 1-2.442 1.003L4 19.5v-2l.187-.008a1.953 1.953 0 0 0 1.142-.483A3.975 3.975 0 0 1 8 16c.988 0 1.945.352 2.671 1.009.35.316.826.49 1.33.491.502 0 .979-.175 1.328-.492a3.956 3.956 0 0 1 2.444-1.002L16 16v-5H4V9h12V7a2 2 0 0 0-3.995-.15L12 7h-2a4 4 0 0 1 7-2.645A3.985 3.985 0 0 1 20 3zm-2 13.523c.16.091.313.194.459.307l.212.179c.35.316.826.49 1.33.491.439 0 .86-.134 1.191-.38l.137-.111c.206-.187.431-.35.67-.486V11h-4zM20 5a2 2 0 0 0-1.995 1.85L18 7v2h4V7a2 2 0 0 0-2-2z">
+                            </path>
+                        </svg></span>
+                    <span>Pool</span>
+                </li>
+                <li
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl ">
+                    <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
+                            role="presentation" focusable="false">
+                            <path
+                                d="M16 1c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C1 7.716 7.716 1 16 1zm0 2C8.82 3 3 8.82 3 16s5.82 13 13 13 13-5.82 13-13S23.18 3 16 3zm2 5a5 5 0 0 1 .217 9.995L18 18h-5v6h-2V8zm0 2h-5v6h5a3 3 0 0 0 .176-5.995z">
+                            </path>
+                        </svg></span>
+                    <span class="min-w-max">Free parking on premises</span>
+                </li>
+                <li
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
+                            role="presentation" focusable="false">
+                            <path
+                                d="M17 1v4.03l4.026-2.324 1 1.732L17 7.339v6.928l6-3.464V5h2v4.648l3.49-2.014 1 1.732L26 11.381l4.026 2.325-1 1.732L24 12.535l-6 3.464 6 3.465 5.026-2.902 1 1.732L26 20.618l3.49 2.016-1 1.732L25 22.351V27h-2v-5.804l-6-3.465v6.929l5.026 2.902-1 1.732L17 26.97V31h-2v-4.031l-4.026 2.325-1-1.732L15 24.66v-6.929l-6 3.464V27H7v-4.65l-3.49 2.016-1-1.732 3.489-2.016-4.025-2.324 1-1.732 5.025 2.901 6-3.464-6-3.464-5.025 2.903-1-1.732L6 11.38 2.51 9.366l1-1.732L7 9.648V5h2v5.803l6 3.464V7.339L9.974 4.438l1-1.732L15 5.03V1z">
+                            </path>
+                        </svg></span>
+                    <span>Air Conditioning</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="block my-6 lg:mb-4 lg:mt-8">
+            <h2 class="mb-5 text-xl font-semibold leading-snug lg:text-2xl md:text-2xl">Other great vacation rentals in
+                Ghana</h2>
+            <div class="flex flex-wrap items-center justify-center space-y-10 md:space-y-0 lg:space-y-0">
+
+                <article class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="../pages/show.html" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/5.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire Guest suit</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.8 (54)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">
+                            Newly refurbished bright and neat
+                        </h4>
+                        <p class="text-sm font-semibold text">$104<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="../assets/images/15.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm swiper-lazy">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire house</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.1 (69)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
+                        <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/16.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire house</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.3 (34)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">Private 6 beds entire room</h4>
+                        <p class="text-sm font-semibold text">$218<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/18.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire apartment</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (10)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
+                        <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="../pages/show.html" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="../assets/images/11.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire apartment</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (53)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">
+                            Newly refurbished bright and neat
+                        </h4>
+                        <p class="text-sm font-semibold text">$104<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </div>
+
+                <article class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/20.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm swiper-lazy">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire apartment</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.6 (27)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
+                        <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/17.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire Guest suit</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.2 (27)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">Private 6 beds entire room</h4>
+                        <p class="text-sm font-semibold text">$218<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-full px-0 md:pr-2 md:w-1/2 lg:pr-2 lg:w-1/4 lg:pb-10">
+                    <div class="">
+                        <a href="#" class="relative w-full swiper-wrapper lg:w-1/2 md:w-1/2 lg:mb-0">
+                            <div class="relative bg-gray-200 border rounded-lg shadow-inner swiper-slide pb-3/4">
+                                <img src="/assets/images/19.jpg" alt="" loading='lazy'
+                                    class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between my-1">
+                            <div class="flex">
+                                <p class="px-1 text-xs font-semibold uppercase border border-gray-600 rounded-sm">
+                                    superhost
+                                </p><span class="px-2 font-normal text-gray-500 text-xxs"> Entire Guest suit</span>
+                            </div>
+                            <div class="flex items-center justify-start my-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 20 20"
+                                    fill="#ffb400">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <p class="text-sm text-gray-600 lg:text-sm"> 4.5 (27)</p>
+                            </div>
+                        </div>
+                        <h4 class="text-base font-normal text-gray-700 line-clamp-1">best in town in the center</h4>
+                        <p class="text-sm font-semibold text">$184<span class="text-base font-normal"> /
+                                night</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">
+                <span class="font-medium">Show all</span>
+            </button>
+        </section>
+
+        <div class="flex my-20 space-x-2">
+            <a href="/index.html" class="text-sm font-medium underline">Airbnb</a>
+
+            <span class="select-none" aria-hidden="true"> › </span>
+
+            <span class="text-sm font-normal">Ghana</span>
+        </div>
+    </main>
+
+
 
     <!--Footer-->
     <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
@@ -255,6 +778,24 @@
         </div>
     </footer>
 
+
+    <!--Scripts-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            breakpoints: {
+                // when window width is >= breakpoint
+                220: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 2,
+                },
+                960: {
+                    slidesPerView: 4,
+                    spaceBetween: 0
+                },
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@
             <div
                 class="flex lg:w-1/3 lg:p-5 lg:mr-10 lg:border-t lg:border-l lg:border-r lg:rounded-t-xl lg:border-gray-300">
                 <img src="/assets/images/avatar-1.svg" alt=""
-                    class="flex-shrink-0 w-20 h-20 mx-auto rounded-full lg:w-36 lg:h-36">
+                    class="flex-shrink-0 w-20 h-20 mx-auto rounded-full select-none lg:w-36 lg:h-36">
             </div>
 
             <div class="lg:w-2/3 lg:ml-10">
@@ -199,47 +199,45 @@
                     </a>
 
                 </div>
-                <div
-                    class="p-5 bg-black border-2 border-gray-100 rounded-full swiper-button-prev bg-opacity-70 swiper-button-white">
+                <div class="swiper-button-prev swiper-button-white">
                 </div>
-                <div
-                    class="p-5 bg-black border-2 border-gray-100 rounded-full swiper-button-white swiper-button-next bg-opacity-70">
+                <div class="swiper-button-white swiper-button-next">
                 </div>
             </div>
         </section>
 
         <!--Comments-->
-        <section class="flex flex-wrap w-full lg:justify-end pt-7 lg:ml-10">
-
-            <div class="flex items-center justify-start pb-5 lg:w-2/3">
+        <section class="flex flex-wrap w-full mx-auto lg:justify-end pt-7 lg:pl-14">
+            <div class="flex items-center justify-start pb-5 lg:pl-3 lg:w-2/3">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-700 fill-current stroke-1 h-9 w-7"
                     viewBox="0 0 20 20" fill="#ffb400">
                     <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
-                <p class="text-lg font-semibold lg:text-2xl"> 31 reviews</p>
+                <p class="text-lg font-semibold lg:text-2xl "> 31 reviews</p>
             </div>
 
             <!--Guest tab is open by default-->
             <div x-data="{ tab: 'guests'}"
-                class="flex items-center justify-start w-full border-b border-gray-200 lg:w-2/3">
+                class="flex items-center justify-start w-full border-b border-gray-200 lg:pl-3 md:pl-3 lg:w-2/3">
 
                 <div class="w-full">
-                    <nav class="w-full mb-4 text-base font-normal text-gray-600 border-b border-gray-200 ">
-                        <ul class="flex flex-row pb-4 space-x-3">
-                            <li class="transition rounded-sm hover:bg-gray-100 hover:p-4">
-                                <a href="#from-guest" :class="{ 'active': tab === 'guests' }"
-                                    @click="tab = 'guests'">From
-                                    guests (26)</a>
+                    <nav class="w-full mb-4 text-base font-normal text-gray-600 border-b border-gray-200">
+                        <ul class="flex flex-row pb-4 space-x-3 ">
+                            <li class="transition rounded-sm hover:bg-gray-100 ">
+                                <a href="#from-guest" :class="{ 'active': tab === 'guests' }" @click="tab = 'guests'">
+                                    <span class="p-2">From guests (26)</span>
+                                </a>
                             </li>
-                            <li class="transition rounded-sm hover:bg-gray-100 hover:p-4">
-                                <a href="#from-hosts" :class="{ 'active': tab === 'hosts' }" @click="tab = 'hosts'">From
-                                    hosts (5)</a>
+                            <li class="transition rounded-sm hover:bg-gray-100">
+                                <a href="#from-hosts" :class="{ 'active': tab === 'hosts' }" @click="tab = 'hosts'">
+                                    <span class="p-2">From hosts (5)</span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
 
-                    <article x-show="tab === 'guests'" x-show="open" class="p-2"
+                    <article x-show="tab === 'guests'" x-show="open" class="py-2"
                         x-transition:enter="transition ease-out duration-300"
                         x-transition:enter-start="opacity-0 transform scale-90"
                         x-transition:enter-end="opacity-100 transform scale-100"
@@ -257,7 +255,7 @@
                                 <div class="flex items-end bg-gray-200 border rounded-lg ">
                                     <a href="/pages/show.html">
                                         <img src="/assets/images/5.jpg" alt=""
-                                            class="object-cover border border-red-200 rounded-lg shadow-sm"
+                                            class="object-cover border border-gray-200 rounded-lg shadow-sm"
                                             style="width: 5rem!important;height: 3.5rem;">
                                     </a>
                                 </div>
@@ -278,7 +276,7 @@
 
                                 <div class="flex items-end bg-gray-200 border rounded-lg ">
                                     <img src="/assets/images/8.jpg" alt=""
-                                        class="object-cover border border-red-200 rounded-lg shadow-sm"
+                                        class="object-cover border border-gray-200 rounded-lg shadow-sm"
                                         style="width: 5rem!important;height: 3.5rem;">
                                 </div>
                             </div>
@@ -321,7 +319,7 @@
                         </div>
                     </article>
 
-                    <article x-show="tab === 'hosts'" x-show="open" class="p-2"
+                    <article x-show="tab === 'hosts'" x-show="open" class="py-2"
                         x-transition:enter="transition ease-out duration-300"
                         x-transition:enter-start="opacity-0 transform scale-90"
                         x-transition:enter-end="opacity-100 transform scale-100"
@@ -357,8 +355,8 @@
                     Report this profile
                 </a>
             </div>
-
         </section>
+
     </main>
 
     <!--Footer-->

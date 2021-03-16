@@ -70,7 +70,7 @@
       }
 
     .m-left {
-        @apply lg:ml-10 !important pb-7 !important;
+        @apply lg:ml-10 pb-7;
       }
 
     .active {
@@ -113,7 +113,7 @@
     }
 
     .lg-only {
-        @apply hidden lg:block md:block !important;
+        @apply hidden lg:block md:block;
     }
 
     .availablility-box {
@@ -229,6 +229,31 @@
         font-size:24px;
         color: black;
         background: white;
+    }
+
+        .indexbg {
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/airbnb-home.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover
+    }
+
+    .swiper_btn {
+        width: min-content;
+        height: min-content;
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 18%), 0px 2px 4px rgb(0 0 0 / 18%) !important; 
+        width: 32px !important;
+        height: 32px !important;
+        outline: none;
+    }
+    .btn_animate {
+        outline: none;
+    }
+
+    .swiper_btn:active,.btn_animate:active {
+        transform:translateY(2px);
+        transition:all 0.05s ease-out;
     }
 
 }

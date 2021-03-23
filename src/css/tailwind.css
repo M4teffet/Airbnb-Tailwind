@@ -102,6 +102,24 @@
         margin-right:auto;
     }
 
+    .topMenu {
+        position: fixed;
+        border-bottom: .8px solid #fafafa;
+        background: #faf0fa;
+        transition: all 100ms;
+        display: flex !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
+        background-color: rgb(255, 255, 255) !important;
+        opacity:0;
+        left: 0px !important;
+        right: 0px !important;
+        top: 0px !important;
+        z-index: 100 !important;
+        padding:1rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     .hide {
         opacity:0;
        
@@ -226,12 +244,12 @@
     }
 
     select > option {
-        font-size:24px;
+        font-size:18px;
         color: black;
         background: white;
     }
 
-        .indexbg {
+    .indexbg {
         background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/airbnb-home.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
@@ -254,6 +272,14 @@
     .swiper_btn:active,.btn_animate:active {
         transform:translateY(2px);
         transition:all 0.05s ease-out;
+    }
+
+    .starthostingbg {
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/host-bg1.webp'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width:100%;
     }
 
 }

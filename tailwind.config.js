@@ -15,6 +15,7 @@ module.exports = {
                 '3/5': '60%',
                 '1/2': '50%',
                 '2/5': '40%',
+                '1/3': '33.333334%',
                 '1/4': '25%'
             },
             maxWidth: {
@@ -33,7 +34,8 @@ module.exports = {
     },
     variants: {
         extend: {
-            lineClamp: ["hover"]
+            lineClamp: ['hover'],
+            display: ['group-hover'],
         }
     },
     plugins: [require('@tailwindcss/line-clamp')],

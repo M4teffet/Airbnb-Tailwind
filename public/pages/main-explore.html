@@ -32,8 +32,8 @@
             </a>
 
             <div class="space-x-6 text-xs font-bold">
-                <a href="#">Sign up</a>
-                <a href="#">Log in</a>
+                <a href="#" class="p-2 transition rounded-md hover:bg-gray-100">Sign up</a>
+                <a href="#" class="p-2 transition rounded-md hover:bg-gray-100">Log in</a>
             </div>
         </nav>
 
@@ -164,7 +164,7 @@
                         breeze. A vehicle is available on request by guest.
                     </p>
 
-                    <button class="btn-explore">
+                    <button class="btn">
                         <span class="font-medium">From / Night</span>
                     </button>
                 </article>
@@ -204,7 +204,7 @@
                         spectacular day and
                     </p>
 
-                    <button class="btn-explore">
+                    <button class="btn">
                         <span class="font-medium">From / Night</span>
                     </button>
                 </article>
@@ -244,7 +244,7 @@
                         facilities, 24/7 guards and protection. The 1-bedroom
                     </p>
 
-                    <button class="btn-explore">
+                    <button class="btn">
                         <span class="font-medium">From / Night</span>
                     </button>
                 </article>
@@ -305,9 +305,9 @@
                 vacation rentals
             </h2>
 
-            <ul class="flex justify-start py-5 space-x-4 transition-shadow swiper-wrapper">
+            <ul class="flex justify-start py-5 space-x-4 transition-shadow swiper-wrapper ">
                 <li
-                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md hover:bg-gray-50 swiper-slide rounded-xl">
                     <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                             style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
                             role="presentation" focusable="false">
@@ -318,7 +318,7 @@
                     <span>Kitchen</span>
                 </li>
                 <li
-                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md hover:bg-gray-50 swiper-slide rounded-xl">
                     <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                             style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
                             role="presentation" focusable="false">
@@ -329,7 +329,7 @@
                     <span>Wifi</span>
                 </li>
                 <li
-                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md hover:bg-gray-50 swiper-slide rounded-xl">
                     <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                             style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
                             role="presentation" focusable="false">
@@ -340,7 +340,7 @@
                     <span>Pool</span>
                 </li>
                 <li
-                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl ">
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md hover:bg-gray-50 swiper-slide rounded-xl ">
                     <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                             style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
                             role="presentation" focusable="false">
@@ -351,7 +351,7 @@
                     <span class="min-w-max">Free parking on premises</span>
                 </li>
                 <li
-                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md swiper-slide rounded-xl">
+                    class="block p-6 space-y-2 font-semibold bg-white border border-gray-100 shadow-md hover:bg-gray-50 swiper-slide rounded-xl">
                     <span><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                             style="display:block;height:30px;width:30px;fill:#222" aria-hidden="true"
                             role="presentation" focusable="false">
@@ -652,52 +652,60 @@
 
 
     <!--Footer-->
-    <footer class="pt-10 mx-auto text-sm bg-gray-100 border-t border-gray-300">
+    <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
         <div class="max-w-6xl px-5 pb-8 mx-auto border-b border-gray-300">
             <div class="flex flex-wrap items-start justify-start">
                 <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
                     <h5 class="mb-2 font-semibold tex-gray-700">Airbnb</h5>
-                    <ul class="leading-loose">
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Careers</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">News</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Policies</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">help</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Diversity &
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Careers</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">News</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Policies</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">help</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Diversity &
                                 Belonging</a>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
                     <h5 class="mb-2 font-semibold tex-gray-700">Discover</h5>
-                    <ul class="leading-loose">
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Trust & Safety</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Travel Credit</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Gift Cards</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Airbnb Citizen</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Business Travel</a>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Trust & Safety</a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Things To Do <span
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Travel Credit</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Gift Cards</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Airbnb Citizen</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                                Travel</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Things To Do <span
                                     class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Business Travel</a>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                                Travel</a>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
                     <h5 class="mb-2 font-semibold tex-gray-700">Hosting</h5>
-                    <ul class="leading-loose">
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Why Host</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Hospitality</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Responsible Hosting</a>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Why Host</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Hospitality</a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Community Center</a>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Responsible
+                                Hosting</a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Host an Experience
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Community
+                                Center</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Host an Experience
                                 <span class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Open House</a>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Open House</a>
                         </li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Donations <span
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Donations <span
                                     class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
                         </li>
 
@@ -766,16 +774,16 @@
                         </svg>
 
                     </h5>
-                    <ul class="leading-loose">
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Terms</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Pricacy</a></li>
-                        <li> <a href="#" class="font-semibold text-gray-600 hover:underline">Site Map</a></li>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Terms</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Pricacy</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Site Map</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="flex items-center max-w-5xl p-4 mx-auto lg:px-0">
-            <p class="pl-2 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
+        <div class="flex items-center max-w-6xl p-5 mx-auto lg:px-0">
+            <p class="pl-1 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
         </div>
     </footer>
 

@@ -46,11 +46,6 @@
         transition: ease .4s;
     }
 
-    .text-xxs {
-        font-size: 0.60rem;
-        line-height: 1rem;
-    }
-
     .text-3xlp {
         font-size: 2rem;
         line-height: 2.25rem;
@@ -104,7 +99,6 @@
 
     .topMenu {
         position: fixed;
-        border-bottom: .8px solid #fafafa;
         background: #faf0fa;
         transition: all 100ms;
         display: flex !important;
@@ -112,6 +106,7 @@
         align-items: center !important;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
         background-color: rgb(255, 255, 255) !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px !important;
         opacity:0;
         left: 0px !important;
         right: 0px !important;
@@ -166,6 +161,27 @@
         border-color: rgb(34, 34, 34) !important;
         background: rgb(255, 255, 255) !important;
         color: rgb(34, 34, 34) !important;
+        transition: all 0s ease 0s !important;
+    }
+
+    .signupbtn {
+        box-sizing: border-box;
+        cursor: pointer !important; 
+        display: inline-block !important;
+        margin: 0px !important;
+        position: relative !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        width: auto !important;
+        touch-action: manipulation !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        outline: none !important;
+        padding: 13px 23px !important;
         transition: all 0s ease 0s !important;
     }
 
@@ -283,5 +299,89 @@
         object-fit: cover;
         width:100%;
     }
+
+    .labelscaledown {
+        left: 0;
+	    color: inherit;
+    }
+
+    input[type="text"]:focus ~ .labelscaledown,
+    input[type="text"]:active ~ .labelscaledown {
+        transition: all .15s ease-in-out 0s;
+        top: -13px;
+        transform: scale(.80);
+        left:0;
+    }
+
+
+
+.form-row {
+	position: relative;
+	margin-top: 30px;
+}
+
+.form-label,
+.form-label1 {
+	position: absolute;
+	top: 17px;
+	left: 20px;
+	color: #999;
+	cursor: text;
+	transition: all .15s ease-in-out 0s;
+}
+
+.form-textbox,
+.form-textbox1 {
+	width: 100%;
+	padding: 15px;
+}
+
+.form-textbox {	
+	background: white;
+}
+
+
+.form-textbox:focus ~ .form-label,
+.form-textbox:valid ~ .form-label,
+.form-textbox1:focus ~ .form-label1,
+.form-textbox1:valid ~ .form-label1 {
+	top: 0em;
+	left: 15px;
+	font-size: .8em;
+	color: inherit;
+	cursor: pointer;
+}
+
+.form-textbox:focus,
+.form-textbox1:focus,
+.form-textbox:active,
+.form-textbox1:active {
+    padding: 20px 15px 10px 15px;
+}
+
+
+
+                            ._167krry {
+                            display: inline-block !important;
+                            border-width: 1px !important;
+                            border-style: solid !important;
+                            border-color: rgb(176, 176, 176) !important;
+                            height: 24px !important;
+                            width: 24px !important;
+                            background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+                            text-align: center !important;
+                            overflow: hidden !important;
+                            vertical-align: top !important;
+                            border-radius: 4px !important;
+                            }
+
+                            .checkstyle {
+                                position: relative !important;
+display: inline-block !important;
+cursor: pointer !important;
+padding: 0px !important;
+                            }
+
+  
 
 }

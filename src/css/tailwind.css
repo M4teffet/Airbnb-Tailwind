@@ -4,6 +4,10 @@
 
 @layer components {
 
+    :root {
+        --cov19-bg-color:#222222;
+    }
+
     .text-xxs {
         font-size: 0.55rem;
         line-height: 0.7rem;
@@ -101,7 +105,7 @@
         position: fixed;
         background: #faf0fa;
         transition: all 100ms;
-        display: flex !important;
+        display: flex;
         justify-content: space-between !important;
         align-items: center !important;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
@@ -242,21 +246,21 @@
     }
 
     .anima {
-    animation-name: animhost !important;
-    animation-timing-function: ease-in-out !important;
-    animation-duration: 1.5s !important;
+        animation-name: animhost !important;
+        animation-timing-function: ease-in-out !important;
+        animation-duration: 1.5s !important;
     }
 
     @keyframes animhost {
         
     0% {
-    opacity: 0;
-    transform: translateY(40px);
+        opacity: 0;
+        transform: translateY(40px);
     }
 
     100% {
-    opacity: 1;
-    transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0px);
     }
         
     }
@@ -315,73 +319,103 @@
 
 
 
-.form-row {
-	position: relative;
-	margin-top: 30px;
-}
+    .form-row {
+	    position: relative;
+	    margin-top: 30px;
+    }
 
-.form-label,
-.form-label1 {
-	position: absolute;
-	top: 17px;
-	left: 20px;
-	color: #999;
-	cursor: text;
-	transition: all .15s ease-in-out 0s;
-}
+    .form-label,
+    .form-label1 {
+	    position: absolute;
+	    top: 17px;
+	    left: 20px;
+	    color: #999;
+	    cursor: text;
+	    transition: all .15s ease-in-out 0s;
+    }
 
-.form-textbox,
-.form-textbox1 {
-	width: 100%;
-	padding: 15px;
-}
+    .form-textbox,
+    .form-textbox1 {
+	    width: 100%;
+	    padding: 15px;
+    }
 
-.form-textbox {	
-	background: white;
-}
+    .form-textbox {	
+	    background: white;
+    }
 
-
-.form-textbox:focus ~ .form-label,
-.form-textbox:valid ~ .form-label,
-.form-textbox1:focus ~ .form-label1,
-.form-textbox1:valid ~ .form-label1 {
-	top: 0em;
-	left: 15px;
-	font-size: .8em;
-	color: inherit;
-	cursor: pointer;
-}
-
-.form-textbox:focus,
-.form-textbox1:focus,
-.form-textbox:active,
-.form-textbox1:active {
-    padding: 20px 15px 10px 15px;
-}
+    .form-textbox:focus ~ .form-label,
+    .form-textbox:valid ~ .form-label,
+    .form-textbox1:focus ~ .form-label1,
+    .form-textbox1:valid ~ .form-label1 {
+	    top: 0em;
+	    left: 15px;
+	    font-size: .8em;
+	    color: inherit;
+	    cursor: pointer;
+    }
 
 
+    .form-labels {
+	    top: -0.5em;
+	    left: 4px;
+	    font-size: .8em;
+	    color: inherit;
+	    cursor: pointer;
+        padding-left: 0.56rem;
+    }
 
-                            ._167krry {
-                            display: inline-block !important;
-                            border-width: 1px !important;
-                            border-style: solid !important;
-                            border-color: rgb(176, 176, 176) !important;
-                            height: 24px !important;
-                            width: 24px !important;
-                            background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
-                            text-align: center !important;
-                            overflow: hidden !important;
-                            vertical-align: top !important;
-                            border-radius: 4px !important;
-                            }
+    .form-textbox:focus,
+    .form-textbox1:focus,
+    .form-textbox:active,
+    .form-textbox1:active {
+        padding: 20px 15px 10px 15px;
+    }
 
-                            .checkstyle {
-                                position: relative !important;
-display: inline-block !important;
-cursor: pointer !important;
-padding: 0px !important;
-                            }
 
-  
+
+    ._167krry {
+        display: inline-block !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: rgb(176, 176, 176) !important;
+        height: 24px !important;
+        width: 24px !important;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+        text-align: center !important;
+        overflow: hidden !important;
+        vertical-align: top !important;
+        border-radius: 4px !important;
+    }
+
+    .checkstyle {
+        position: relative !important;
+        display: inline-block !important;
+        cursor: pointer !important;
+        padding: 0px !important;
+    }
+
+    .cov19 {
+        color: #a3a3a3;
+    }
+
+    .cov19:hover {
+        color: #a3a3a3cc;
+    }
+
+    .covbg {
+        background-color: var(--cov19-bg-color);
+    }
+
+    @media (max-width: 768px) {
+        .covbg {
+            --cov19-bg-color: #F7F7F7
+        }
+        .cov19 {
+            color: #222222
+        }
+  }
+
+    
 
 }

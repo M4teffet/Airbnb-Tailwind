@@ -36,6 +36,8 @@ module.exports = {
         extend: {
             lineClamp: ['hover'],
             display: ['group-hover'],
+            backgroundColor: ['checked'],
+            borderColor: ['checked'],
         }
     },
     plugins: [require('@tailwindcss/line-clamp')],

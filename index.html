@@ -12,514 +12,184 @@
     <title>Airbnb tailwind</title>
 </head>
 
-<body class="antialiased text-gray-700">
-    <header class="relative p-6 indexbg">
+<body class="antialiased text-gray-800">
 
-        <a href="/">
-            <h1>
-                <span class="sr-only"> Airbnb </span>
-                <svg fill="#fff" style="display: block;">
-                    <path
-                        d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
-                    </path>
-                </svg>
-            </h1>
-        </a>
+    <!--Cov19 top banner-->
+    <section class="p-4 md:p-5 lg:p-5 covbg">
+        <div class="flex items-center justify-center max-w-6xl px-5 mx-auto">
+            <a href="#" class="text-xs font-medium underline transition md:text-sm lg:text-sm cov19">
+                Get the latest on our COVID-19 response
+            </a>
+        </div>
+    </section>
 
-        <div class="max-w-6xl py-2 mx-auto lg:px-5 lg:py-16">
-            <h2 class="mb-4 text-4xl font-semibold leading-none text-white lg:text-5xl">
-                Book trip. Host travels. All on airbnb.
-            </h2>
+    <header class="pt-1 pb-5 bg-black md:p-5 lg:p-5">
+        <div class="flex-wrap items-start justify-between hidden max-w-6xl px-5 mx-auto md:flex lg:flex">
+            <a href="/" class="flex w-1/3 p-2">
+                <h1 class="flex space-x-1">
+                    <span class="sr-only"> Airbnb </span>
+                    <svg fill="#fff" style="display: block;" class="w-8 h-8">
+                        <path
+                            d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+                        </path>
+                    </svg>
+                    <span class="hidden text-xl font-bold text-white md:hidden lg:block">airbnb</span>
+                </h1>
+            </a>
 
-            <!--Buttons-->
-            <div class="flex flex-wrap justify-start max-w-2xl mx-auto item-center md:mx-0 lg:mx-0 anima">
+            <div
+                class="flex items-end justify-center w-1/3 space-x-1 text-base text-white h-28 lg:h-auto lg:items-center">
+                <a href="" class="p-2 hover:text-gray-300 min-w-max">Places to stay</a>
+                <a href="" class="p-2 hover:text-gray-300 min-w-max">Experiences</a>
+                <a href="" class="p-2 hover:text-gray-300 min-w-max">Online Experiences</a>
+            </div>
 
-                <div class="w-full mb-4 lg:pr-5 lg:w-1/2 md:w-1/2 lg:mb-0">
-                    <p class="mb-2 tracking-wide text-white">Find a place to stay with things to do.</p>
-                    <a href="/pages/main-explore.html"
-                        class="block w-full px-10 py-3 font-bold text-center transition bg-white border-2 border-white rounded md:px-5 md:mr-2 hover:bg-gray-300">Explore
+            <div class="flex justify-end w-1/3 text-white">
+                <div class="flex items-center">
+                    <a href="#"
+                        class="p-3 text-sm font-semibold transition rounded-l-2xl rounded-r-2xl hover:bg-gray-800 min-w-max">Become
+                        a host
                     </a>
-                </div>
 
-                <div class="w-full lg:pl-5 md:w-1/2 lg:w-1/2">
-                    <p class="mb-2 tracking-wide text-white">Earn money from your extra space </p>
-                    <a href="/pages/host.html"
-                        class="block w-full px-10 py-3 font-bold text-center text-gray-200 transition bg-transparent border-2 border-white rounded md:px-5 md:ml-2 hover:bg-gray-800 hover:text-white hover:border-gray-800">Host
-                    </a>
+                    <div class="p-1">
+                        <button class="p-4 rounded-full hover:bg-gray-800">
+                            <div class="flex items-center justify-center text-center">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                    <path
+                                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="p-2 bg-white rounded-l-3xl rounded-r-3xl">
+                        <div class="relative">
+                            <button class="flex items-center justify-center space-x-2">
+                                <div aria-label="Main navigation menu" class="inline-block">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; color: #222222;">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <path d="m2 16h28"></path>
+                                            <path d="m2 24h28"></path>
+                                            <path d="m2 8h28"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="w-7" aria-hidden="true">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #3f3e3e;">
+                                        <path
+                                            d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="relative max-w-4xl px-5 mx-auto my-2 lg:px-5 md:px-10" style="z-index: 2;">
+            <form action="#">
+                <div
+                    class="flex items-center justify-start p-2 overflow-x-hidden bg-white rounded-l-full rounded-r-full">
+
+                    <div class="relative flex items-center w-full px-3 lg:hidden md:hidden">
+                        <div class="flex items-center pr-3">
+                            <button aria-label="Search" type="submit" class="text-pink-700">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                    <g fill="none">
+                                        <path
+                                            d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <input type="text" id="form-email" class="text-base text-gray-700 outline-none"
+                            placeholder="Where are you going ?" required>
+                    </div>
+
+                    <div class="relative hidden pl-3 lg:block md:block">
+                        <label for="form-email"
+                            class="absolute font-semibold text-gray-800 form-labels">Location</label>
+                        <input type="text" id="form-email" class="text-base text-gray-800 outline-none"
+                            placeholder="Where are you going ?" style="margin-top: 10px;" required>
+                    </div>
+
+                    <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+                        <label for="form-email" class="absolute font-semibold text-gray-800 form-labels">Check
+                            in</label>
+                        <input type="text" id="form-email" class="text-base text-gray-600 outline-none"
+                            placeholder="Add dates" style="margin-top: 10px;" required>
+                    </div>
+
+                    <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+                        <label for="form-email" class="absolute font-semibold text-gray-800 form-labels">Check
+                            out</label>
+                        <input type="text" id="form-email" class="text-base text-gray-600 outline-none"
+                            placeholder="Add dates" style="margin-top: 10px;" required>
+                    </div>
+
+                    <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+                        <label for="form-email" class="absolute font-semibold text-gray-800 form-labels">Guests</label>
+                        <input type="text" id="form-email" class="text-base text-gray-600 outline-none"
+                            placeholder="Add guests" style="margin-top: 10px;" required>
+                    </div>
+
+                    <div class="relative justify-end hidden w-1/5 lg:flex md:flex">
+                        <button aria-expanded="true" type="button">
+                            <span>
+                                <div class="flex items-center justify-center px-4 py-3 space-x-2 rounded-l-full rounded-r-full"
+                                    style="background-color: rgb(255, 56, 92);">
+                                    <div class="text-white"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                            <g fill="none">
+                                                <path
+                                                    d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="hidden font-semibold text-white md:hidden lg:block">Search</div>
+                                </div>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="relative mx-5" style="z-index: 1; top: -50px;">
+            <picture>
+                <source media="(max-width:640px)" srcset="/assets/images/indexCover1.webp">
+                <source media="(max-width:1024px)" srcset="/assets/images/indexCover.webp">
+                <img src="/assets/images/indexCover2.webp" alt="" class="object-center w-full rounded h-96">
+            </picture>
+        </div>
+
+        <div
+            class="flex items-center justify-start md:justify-center lg:justify-center max-w-xxs lg:max-w-none md:max-w-none">
+            <p class="pl-5 pr-10 -mt-5 text-2xl font-light text-white lg:pb-5 lg:text-3xl">
+                Made possible by
+                Hosts
+            </p>
         </div>
     </header>
 
-    <main class="max-w-6xl px-5 py-12 mx-auto lg:py-16">
-        <h3 class="mb-4 text-2xl font-bold leading-none"> Book uniques homes and experiences </h3>
 
-        <form action="/pages/explore.html" class="mb-10 lg:mb-10">
-            <div class="flex flex-wrap items-center justify-start lg:space-x-4 md:space-x-4">
-
-                <div class="input min-w-max lg:w-auto md:w-auto">
-                    <label for="location" class="flex flex-col" style="height: 38px;">
-                        <span class="font-bold uppercase text-xxs">Location</span>
-                        <input type="text" aria-autocomplete="list" aria-expanded="false" placeholder="Anywhere"
-                            class="py-0 m-0 text-sm font-medium leading-none text-gray-500 no-underline bg-transparent border-0 outline-none">
-                    </label>
-                </div>
-
-                <div class="input min-w-max lg:w-auto md:w-auto">
-                    <div class="flex divide-x">
-                        <label for="location" class="flex flex-col w-1/2">
-                            <span class="font-bold uppercase text-xxs">Check in</span>
-                            <input type="date" aria-autocomplete="list" aria-expanded="false"
-                                aria-placeholder="Add date" placeholder="Add date"
-                                class="pr-5 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent border-0 outline-none">
-                        </label>
-                        <label for="location" class="flex flex-col w-1/2 pl-5">
-                            <span class="font-bold uppercase text-xxs">Check out</span>
-                            <input type="date" aria-autocomplete="list" aria-expanded="false" placeholder="Add date"
-                                class="m-0 text-sm font-medium leading-none text-gray-500 no-underline bg-transparent border-0 outline-none">
-                        </label>
-                    </div>
-                </div>
-
-                <div class="input min-w-max lg:w-auto md:w-auto">
-                    <div class="flex divide-x">
-                        <label for="location" class="flex flex-col w-1/2 pr-5" style="height: 38px;">
-                            <span class="font-bold uppercase text-xxs">Adults</span>
-                            <select id="guest"
-                                class="box-border w-full mr-0 text-sm font-medium text-gray-500 no-underline bg-transparent bg-white border-0 outline-none">
-                                <option value="o">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </label>
-                        <label for="location" class="flex flex-col w-1/2 pl-5" style="height: 38px;">
-                            <span class="font-bold uppercase text-xxs">Children</span>
-                            <select id="guest"
-                                class="w-full py-0 m-0 text-sm font-medium text-gray-500 no-underline bg-transparent bg-white border-0 outline-none">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-
-
-                <button
-                    class="w-full p-5 rounded-lg min-w-max lg:w-auto md:w-auto bg-gradient-to-r from-red-600 to-pink-700">
-                    <span class="flex items-center justify-center space-x-1 text-white">
-                        <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false"
-                            style="height:12px;width:12px;display:block;fill:currentColor;margin-right: 5px;">
-                            <path
-                                d="m2.5 7c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5m13.1 6.9-2.8-2.9c.7-1.1 1.2-2.5 1.2-4 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.5 0 2.9-.5 4-1.2l2.9 2.8c.2.3.5.4.9.4.3 0 .6-.1.8-.4.5-.5.5-1.2 0-1.7">
-                            </path>
-                        </svg>
-                        Search
-                    </span>
-                </button>
-
-            </div>
-        </form>
-
-        <h3 class="mb-4 text-2xl font-bold leading-none lg:mb-2"> What guests are saying about homes in the United
-            states</h3>
-
-        <div class="flex lg:items-center item-start">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="#ffb400">
-                <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-            <p class="pl-2">
-                United States homes were
-                <strong>rated 4.8 out of 5 stars</strong>
-                with
-                <strong>42,500,000+ reviews</strong>
-            </p>
-        </div>
-
-        <!--Cards-->
-        <section class="flex flex-wrap items-start justify-between my-6 overflow-hidden lg:my-10">
-
-            <article class="article">
-                <div class="relative bg-gray-200 rounded pb-2/3">
-                    <img src="/assets/images/1.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                </div>
-                <div class="flex items-center justify-start my-3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                </div>
-                <p class="text-sm font-light leading-snug text-gray-700 transition line-clamp-4">
-                    A self-enclosed two-bedroom apartment with a large kitchen, living/dining room, two bedrooms with
-                    ensuite baths located on the 2nd floor of our secure compound. There is an ample balcony for outdoor
-                    relaxing. Take a swim. Work out at the gym. Relax by the pool or in the garden. For your comfort, we
-                    have a standby generator, an onsite well plus water tanks.</p>
-
-                <div class="flex items-center justify-start my-4">
-                    <img src="/assets/images/avatar-2.svg" alt="" class="flex-shrink-0 w-12 h-12 rounded-full">
-                    <div class="flex-1 pl-4 text-sm">
-                        <p class="font-semibold leading-none">Koffi</p>
-                        <p>France</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="relative bg-gray-200 rounded pb-2/3">
-                    <img src="/assets/images/2.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                </div>
-                <div class="flex items-center justify-start my-3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                </div>
-                <p class="text-sm font-light leading-snug text-gray-700 line-clamp-4">Nicole
-                    courts is a 6unit apartment with each unit containing a 3bedroom flat. Each flat has a 3 bedroom,
-                    3bathroom with guest toilet, a study room, all rooms are air conditioned, a laundry room, a dinning
-                    area, a fitted kitchen. Every apartment has a flat tv, a dstv, room furniture, a microwave, a double
-                    door fridge, cooking stove, gas cylinder, utensils and a washing machine</p>
-                <div class="flex items-center justify-start my-4">
-                    <a href="pages/profile.html">
-                        <img src="/assets/images/avatar-1.svg" alt="" class="flex-shrink-0 w-12 h-12 rounded-full">
-                    </a>
-                    <div class="flex-1 pl-4 text-sm">
-                        <p class="font-semibold leading-none">Akua</p>
-                        <p>United State</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="relative bg-gray-200 rounded pb-2/3">
-                    <img src="/assets/images/3.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                </div>
-                <div class="flex items-center justify-start my-3 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mx-1 fill-current text-cyan"
-                        viewBox="0 0 20 20" fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current text-cyan" viewBox="0 0 20 20"
-                        fill="#ffb400">
-                        <path
-                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                </div>
-                <p class="text-sm font-light leading-snug text-gray-700 line-clamp-4">
-                    Our spacious, clean and comfortable 2 bedroom apartment is on the 2nd floor, secure with natural
-                    ventilation in the heart of Kumasi, Basically 5 minute drive to all the major places in kumasi
-                    including a beautiful Golf course. Each room has been carefully designed for comfort and the beds
-                    have been laid with crisp cotton sheets.</p>
-                <div class="flex items-center my-4 justtify-start">
-                    <img src="/assets/images/avatar-3.svg" alt="" class="flex-shrink-0 w-12 h-12 rounded-full">
-                    <div class="flex-1 pl-4 text-sm">
-                        <p class="font-semibold leading-none">Nana Yaw</p>
-                        <p>United Kingdom</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <h3 class="pb-4 mb-4 text-2xl font-bold leading-none border-b bold lg:mb-2">Travelling with Airbnb</h3>
-            <div class="flex flex-wrap items-center justify-between pb-8 my-6 border-gray-300 lg:my-8">
-                <div class="w-full mb-6 lg:px-2 lg:w-1/3 lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-7 h-7 text-cyan" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <p class="mt-3 mb-1 font-bold">24/7 customer support</p>
-                    <p class="text-sm font-light leading-snug text-gray-700 line-clamp-2 max-w-prose"> Day or night, we
-                        are here for
-                        you. Talk to
-                        our support team drom anywhere in the world, any hour of day.</p>
-                </div>
-                <div class="w-full mb-6 lg:px-2 lg:w-1/3 lg:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-7 h-7 text-cyan" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <p class="mt-3 mb-1 font-bold">Global hospitality standards</p>
-                    <p class="text-sm font-light leading-snug text-gray-700 line-clamp-2 max-w-prose">Guests review
-                        their hosts
-                        after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on
-                        Airbnb.</p>
-                </div>
-                <div class="w-full lg:px-2 lg:w-1/3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-7 h-7 text-cyan" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <p class="mt-3 mb-1 font-bold">5-stars hosts</p>
-                    <p class="text-sm font-light leading-snug text-gray-700 line-clamp-2 max-w-prose">From fresh-pressed
-                        sheets to
-                        tips on where
-                        to get the best brunch our hosts are full of local hospitality.</p>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section>
-            <h3 class="pb-4 mb-4 text-2xl font-bold lg:mb-2">Just book in the United States</h3>
-
-            <div class="flex flex-wrap justify-between my-6 ites-start lg:my-8">
-                <a href="#" class="w-full mb-6 lg:w-1/4 md:w-1/2 lg:px-2 md:px-2 lg:mb-0">
-                    <div class="relative bg-gray-200 border rounded shadow-inner pb-2/3">
-                        <img src="/assets/images/4.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                    </div>
-                    <p class="pt-2 font-bold text-gray-600 uppercase text-xxs">Earth house <span aria-hidden="true">
-                            *</span> Aptos</p>
-                    <h4 class="my-2 text-sm font-medium leading-snug">The Joshua Tree House</h4>
-                    <p class="mb-1 text-xs text-gray-600">$259/night</p>
-                    <div class="flex items-center justify-start my-1">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-
-                        <p class="text-xs text-gray-600 lg:text-xxs"> 355 <span aria-hidden="true">*</span> Superhost
-                        </p>
-                    </div>
-                </a>
-                <a href="#" class="w-full mb-6 lg:w-1/4 md:w-1/2 lg:px-2 md:px-2 lg:mb-0">
-                    <div class="relative bg-gray-200 border rounded shadow-inner pb-2/3">
-                        <img src="/assets/images/5.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                    </div>
-                    <p class="pt-2 font-bold text-gray-600 uppercase text-xxs">Entire house <span aria-hidden="true">
-                            *</span> Kwame Tree</p>
-                    <h4 class="my-2 text-sm font-medium leading-snug line-clamp-1">Mushroom Dome Cabin: #1 on airbnb in
-                        the
-                        world</h4>
-                    <p class="mb-1 text-xs text-gray-600">$199/night</p>
-                    <div class="flex items-center justify-start my-1">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-
-                        <p class="text-xs text-gray-600 lg:text-xxs"> 497 <span aria-hidden="true">*</span> Superhost
-                        </p>
-                    </div>
-                </a>
-
-                <a href="#" class="w-full mb-6 lg:w-1/4 md:w-1/2 lg:px-2 md:px-2 lg:mb-0">
-                    <div class="relative bg-gray-200 border rounded shadow-inner pb-2/3">
-                        <img src="/assets/images/6.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                    </div>
-                    <p class="pt-2 font-bold text-gray-600 uppercase text-xxs">Remote cotage <span aria-hidden="true">
-                            *</span> kwadwo Thin</p>
-                    <h4 class="my-2 text-sm font-medium leading-snug">Best cotage in London</h4>
-                    <p class="mb-1 text-xs text-gray-600">$235/night</p>
-                    <div class="flex items-center justify-start my-1">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-
-                        <p class="text-xs text-gray-600 lg:text-xxs"> 467 <span aria-hidden="true">*</span> Superhost
-                        </p>
-                    </div>
-                </a>
-                <a href="#" class="w-full mb-6 lg:w-1/4 md:w-1/2 lg:px-2 md:px-2 lg:mb-0">
-                    <div class="relative bg-gray-200 border rounded shadow-inner pb-2/3">
-                        <img src="/assets/images/7.jpg" alt="" class="absolute object-cover w-full h-full rounded">
-                    </div>
-                    <p class="pt-2 font-bold text-gray-600 uppercase text-xxs">Designed House <span aria-hidden="true">
-                            *</span> Jean two pin</p>
-                    <h4 class="my-2 text-sm font-medium leading-snug">Designed house best remote house </h4>
-                    <p class="mb-1 text-xs text-gray-600">$119/night</p>
-                    <div class="flex items-center justify-start my-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 mx-1 fill-current lg:w-3 lg:h-3 text-cyan" viewBox="0 0 20 20"
-                            fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current lg:w-3 lg:h-3 text-cyan"
-                            viewBox="0 0 20 20" fill="#ffb400">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                        <p class="text-xs text-gray-600 lg:text-xxs"> 1345 <span aria-hidden="true">*</span> Superhost
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <a href="#" class="flex items-center text-base font-medium text-cyan"> Show all (22 000+)
-                <svg xmlns="http://www.w3.org/2000/svg" class="relative w-5 h-6 pt-1 fill-current" viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd" />
-                </svg>
-            </a>
-        </section>
-
-        <section>
-            <div class="mt-8 lg:mt-16">
-                <h3 class="mb-4 text-2xl font-bold leading-none lg:mb-2">When are you traveling?</h3>
-                <p class="font-light">Add dates for adpated pricing and availability</p>
-                <a href="#" class="inline-block px-6 py-3 my-2 font-bold text-white rounded bg-cyan">Add Dates</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-10 text-sm bg-gray-100 border-t border-gray-300">
+    <!--Footer-->
+    <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
         <div class="max-w-6xl px-5 pb-8 mx-auto border-b border-gray-300">
             <div class="flex flex-wrap items-start justify-start">
                 <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
@@ -653,6 +323,158 @@
             <p class="pl-1 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
         </div>
     </footer>
+
+    <!--botton nav mobile-->
+    <nav
+        class="sticky bottom-0 left-0 right-0 z-50 flex flex-row items-center justify-center px-5 py-3 space-x-20 bg-white border-t border-gray-300 md:hidden lg:">
+        <a href="#" class="block">
+            <div class="flex items-center justify-center p-1" style="color: #FF385C;">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                    <g fill="none">
+                        <path
+                            d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="text-xs font-semibold text-gray-900">Explore</div>
+        </a>
+        <a href="#" class="block">
+            <div class="flex items-center justify-center p-1 text-gray-400">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                        d="m23 3c2.106801 0 4.1361668.82306574 5.6571068 2.34289322 1.5202187 1.52021874 2.3428932 3.54936205 2.3428932 5.65710678 0 6.1258166-4.1336896 10.7413484-13.2771622 17.0360378l-.4613525.3161485-1.2603024.8557461-.561306-.379523c-10.08413946-6.8183189-14.4398769-11.4368525-14.4398769-17.8284094 0-2.1072166.82336538-4.13657894 2.34389322-5.65710678 1.51945266-1.51945266 3.54974264-2.34289322 5.65610678-2.34289322 2.0014609 0 3.9330366.74281683 5.4253543 2.12030845l.2319249.22275721 1.3417208 1.34293434 1.3448932-1.34310678c1.3675074-1.36750739 3.148793-2.17124499 5.0269145-2.31831743l.3138626-.01841591zm0 2c-1.4881441 0-2.9222843.54615204-4.0367433 1.5612911l-.2051499.19581568-2.7582792 2.75827923-2.7566756-2.75802055c-1.1419182-1.14108286-2.6614358-1.75736546-4.243152-1.75736546-1.58115306 0-3.10134088.61655445-4.24189322 1.75710678-1.14169457 1.14169457-1.75810678 2.660976-1.75810678 4.24289322 0 5.1012962 3.53044809 9.1738639 11.7845794 14.9510839l.8707748.6038363.3446458.2350798.5857119-.3992616.8733618-.6071874c7.706855-5.4127073 11.2817846-9.4483722 11.5273066-14.2471091l.0102199-.2673951.0033998-.2690468c0-1.5826219-.6158555-3.1016419-1.756848-4.24263454-1.1419182-1.14108286-2.6614358-1.75736546-4.243152-1.75736546z">
+                    </path>
+                </svg>
+            </div>
+            <div class="text-xs font-semibold text-gray-500 hover:text-gray-900">Saved</div>
+        </a>
+        <a href="#" class="block">
+            <div class="flex items-center justify-center p-1 text-gray-400">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                        d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z">
+                    </path>
+                </svg>
+            </div>
+            <div class="text-xs font-semibold text-gray-500 hover:text-gray-900">Log in</div>
+        </a>
+    </nav>
+
+    <!--fixed bar on scroll-->
+    <header id="topNav" class="bottomMenu">
+        <div class="flex justify-between w-full h-10 max-w-6xl mx-auto">
+            <a href="/" class="flex w-1/3 p-2">
+                <h1 class="flex space-x-1 ">
+                    <span class="sr-only"> Airbnb </span>
+                    <svg fill="rgb(255, 56, 92)" style="display: block;" class="w-8 h-8 text-pink-600">
+                        <path
+                            d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+                        </path>
+                    </svg>
+                    <span class="hidden text-xl font-bold md:hidden lg:block"
+                        style="color: rgb(255, 56, 92);">airbnb</span>
+                </h1>
+            </a>
+
+            <div
+                class="relative flex items-center justify-start w-1/3 pl-4 pr-1 border rounded-l-full rounded-r-full max-w-min">
+                <input type="text" id="form-email" class="text-base text-left text-gray-700 outline-none"
+                    placeholder="Where are you going ?" required>
+                <div class="flex items-center">
+                    <button aria-expanded="true" type="button">
+                        <span>
+                            <div class="flex items-center justify-center p-2 rounded-full"
+                                style="background-color: rgb(255, 56, 92);">
+                                <div class="text-white">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                        <g fill="none">
+                                            <path
+                                                d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex justify-end w-1/3">
+                <div class="flex items-center">
+                    <a href="#"
+                        class="p-3 text-sm font-semibold transition rounded-l-2xl rounded-r-2xl hover:bg-gray-100 min-w-max">Become
+                        a host
+                    </a>
+
+                    <div class="p-1">
+                        <button class="p-4 rounded-full hover:bg-gray-100">
+                            <div class="flex items-center justify-center text-center">
+                                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                    <path
+                                        d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="p-2 border rounded-l-full rounded-r-full">
+                        <div class="relative">
+                            <button class="flex items-center justify-center space-x-2">
+                                <div aria-label="Main navigation menu" class="inline-block">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; color: #222222;">
+                                        <g fill="none" fill-rule="nonzero">
+                                            <path d="m2 16h28"></path>
+                                            <path d="m2 24h28"></path>
+                                            <path d="m2 8h28"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="w-7" aria-hidden="true">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                        role="presentation" focusable="false"
+                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #3f3e3e;">
+                                        <path
+                                            d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Show top banner on scrool-->
+    <script>
+        myID = document.getElementById("topNav");
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 135) {
+                myID.className = "topMenu show hidden md:flex lg:flex"
+            } else {
+                myID.className = "topMenu hide"
+            }
+        };
+        window.addEventListener("scroll", myScrollFunc);
+    </script>
 </body>
 
 </html>

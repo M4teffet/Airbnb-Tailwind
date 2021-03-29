@@ -3,7 +3,8 @@ const lineClamp = require('@tailwindcss/line-clamp')
 module.exports = {
   purge: [
     './index.html',
-    './public/**/*.html'
+    './public/**/*.html',
+    './public/**/*.css'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

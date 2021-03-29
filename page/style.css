@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+:root {
+    --cov19-bg-color:#222222;
+}
+
+    .text-xxs {
+        font-size: 0.55rem;
+        line-height: 0.7rem;
+    }
+
+    .article {
+        @apply w-full mb-6 lg:w-1/3 md:w-1/2 md:pl-2 lg:px-2 lg:mb-0;
+    }
+
+    .label {
+        @apply block mb-2 text-xs font-semibold tracking-wide text-gray-900 uppercase;
+    }
+
+
+    .input {
+        @apply w-full px-3 py-3 my-2 border border-gray-300 rounded-md;
+    }
+
+
+    .input:hover {
+        @apply transition border-gray-400 shadow outline-none;
+        background-clip: padding-box;
+        box-shadow: 0 0 0 0.2rem theme('colors.gray.200');
+    }
+
+    .input::placeholder {
+        @apply text-gray-700;
+    }
+
+    .sr-only {
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+
+    .transition {
+        transition: ease .4s;
+    }
+
+    .text-3xlp {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    .text-cyan {
+        color: #008f94
+    }
+    
+    .bg-cyan {
+        background-color: #008f94;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+    .m-left {
+        @apply lg:ml-10 pb-7;
+      }
+
+    .active {
+          @apply pb-4 font-semibold border-b-2 border-gray-800;
+      }
+      
+    .b-left {
+          @apply border-l-8 border-blue-600;
+      }
+
+
+    .bottomMenu {
+        position: fixed;
+        border-bottom: 1px solid #fafafa;
+        background: #faf0fa;
+        transition: all 100ms;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
+        background-color: rgb(255, 255, 255) !important;
+        opacity:0;
+        left: 0px !important;
+        right: 0px !important;
+        top: 0px !important;
+        z-index: 100 !important;
+        padding:1rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .topMenu {
+        position: fixed;
+        background: #faf0fa;
+        transition: all 100ms;
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
+        background-color: rgb(255, 255, 255) !important;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px !important;
+        opacity:0;
+        left: 0px !important;
+        right: 0px !important;
+        top: 0px !important;
+        z-index: 100 !important;
+        padding:1rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hide {
+        opacity:0;
+       
+    }
+    
+    .show {
+        opacity:1;
+      
+    }
+
+    .lg-only {
+        @apply hidden lg:block md:block;
+    }
+
+    .availablility-box {
+        @apply sticky hidden w-1/3 py-6 mt-10 text-gray-900 bg-white border border-gray-300 shadow-xl lg:px-6 md:w-2/5 md:ml-10 lg:ml-20 lg:mr-5 md:p-4 top-16 lg:block md:block rounded-xl;
+    }
+
+    .link-active:hover {
+        border-bottom: 2px solid #000;
+        padding-bottom:20px;
+    }
+    
+    .btn {
+        box-sizing: border-box;
+        cursor: pointer !important; 
+        display: inline-block !important;
+        margin: 0px !important;
+        position: relative !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        width: auto !important;
+        touch-action: manipulation !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        outline: none !important;
+        padding: 13px 23px;
+        border-color: rgb(34, 34, 34) !important;
+        background: rgb(255, 255, 255) !important;
+        color: rgb(34, 34, 34) !important;
+        transition: all 0s ease 0s !important;
+    }
+
+    .signupbtn {
+        box-sizing: border-box;
+        cursor: pointer !important; 
+        display: inline-block !important;
+        margin: 0px !important;
+        position: relative !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        width: auto !important;
+        touch-action: manipulation !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        outline: none !important;
+        padding: 13px 23px !important;
+        transition: all 0s ease 0s !important;
+    }
+
+    .btn-explore {
+        box-sizing: border-box;
+        cursor: pointer !important; 
+        display: inline-block !important;
+        margin: 0px !important;
+        position: relative !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        width: auto !important;
+        touch-action: manipulation !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        outline: none !important;
+        padding: 7px 13px !important;
+        border-color: rgb(34, 34, 34) !important;
+        background: rgb(255, 255, 255) !important;
+        color: rgb(34, 34, 34) !important;
+        transition: all 0s ease 0s !important;
+    }
+
+    .btn:hover {
+        border-color: rgb(0, 0, 0) !important;
+        background: rgb(247, 247, 247) !important;
+        color: rgb(34, 34, 34) !important;
+    }
+
+    .nav-btn {
+        @apply p-5 bg-gray-900 border-2 border-gray-100 rounded-full shadow-sm focus:outline-none bg-opacity-60;
+    }
+
+    .filter-btn {
+        @apply hidden px-4 py-2 mb-6 font-normal border border-gray-300 rounded-l-full rounded-r-full lg:block md:block hover:border-gray-600;
+    }
+
+    .explorer_banner {
+        max-width: 100% !important;
+        width: 75% !important;
+        object-fit: cover !important;
+        height: 100% !important;
+        margin-left: 25% !important;
+        border-radius: 8px !important;
+        min-height:477px !important;
+    }
+
+    .hostbg {
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('assets/images/host-bg.webp'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover
+    }
+
+    .anima {
+        animation-name: animhost !important;
+        animation-timing-function: ease-in-out !important;
+        animation-duration: 1.5s !important;
+    }
+
+    @keyframes animhost {
+        
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+        
+    }
+
+    select > option {
+        font-size:18px;
+        color: black;
+        background: white;
+    }
+
+    .indexbg {
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('assets/images/airbnb-home.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover
+    }
+
+    .swiper_btn {
+        width: min-content;
+        height: min-content;
+        box-shadow: 0px 1px 2px rgb(0 0 0 / 18%), 0px 2px 4px rgb(0 0 0 / 18%) !important; 
+        width: 32px !important;
+        height: 32px !important;
+        outline: none;
+    }
+    .btn_animate {
+        outline: none;
+    }
+
+    .swiper_btn:active,.btn_animate:active {
+        transform:translateY(2px);
+        transition:all 0.05s ease-out;
+    }
+
+    .starthostingbg {
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('assets/images/host-bg1.webp'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width:100%;
+    }
+
+    .labelscaledown {
+        left: 0;
+	    color: inherit;
+    }
+
+    input[type="text"]:focus ~ .labelscaledown,
+    input[type="text"]:active ~ .labelscaledown {
+        transition: all .15s ease-in-out 0s;
+        top: -13px;
+        transform: scale(.80);
+        left:0;
+    }
+
+
+
+    .form-row {
+	    position: relative;
+	    margin-top: 30px;
+    }
+
+    .form-label,
+    .form-label1 {
+	    position: absolute;
+	    top: 17px;
+	    left: 20px;
+	    color: #999;
+	    cursor: text;
+	    transition: all .15s ease-in-out 0s;
+    }
+
+    .form-textbox,
+    .form-textbox1 {
+	    width: 100%;
+	    padding: 15px;
+    }
+
+    .form-textbox {	
+	    background: white;
+    }
+
+    .form-textbox:focus ~ .form-label,
+    .form-textbox:valid ~ .form-label,
+    .form-textbox1:focus ~ .form-label1,
+    .form-textbox1:valid ~ .form-label1 {
+	    top: 0em;
+	    left: 15px;
+	    font-size: .8em;
+	    color: inherit;
+	    cursor: pointer;
+    }
+
+
+    .form-labels {
+	    top: -0.5em;
+	    left: 4px;
+	    font-size: .8em;
+	    color: inherit;
+	    cursor: pointer;
+        padding-left: 0.56rem;
+    }
+
+    .form-textbox:focus,
+    .form-textbox1:focus,
+    .form-textbox:active,
+    .form-textbox1:active {
+        padding: 20px 15px 10px 15px;
+    }
+
+
+
+    ._167krry {
+        display: inline-block !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: rgb(176, 176, 176) !important;
+        height: 24px !important;
+        width: 24px !important;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+        text-align: center !important;
+        overflow: hidden !important;
+        vertical-align: top !important;
+        border-radius: 4px !important;
+    }
+
+    .checkstyle {
+        position: relative !important;
+        display: inline-block !important;
+        cursor: pointer !important;
+        padding: 0px !important;
+    }
+
+    .cov19 {
+        color: #a3a3a3;
+    }
+
+    .cov19:hover {
+        color: #a3a3a3cc;
+    }
+
+    .covbg {
+        background-color: var(--cov19-bg-color);
+    }
+
+    @media (max-width: 768px) {
+        .covbg {
+            --cov19-bg-color: #F7F7F7
+        }
+        .cov19 {
+            color: #222222
+        }
+    }    
+
+}

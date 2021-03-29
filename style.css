@@ -8,27 +8,6 @@
     --cov19-bg-color:#222222;
 }
 
-        /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-
     .text-xxs {
         font-size: 0.55rem;
         line-height: 0.7rem;
@@ -259,7 +238,7 @@
     }
 
     .hostbg {
-        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/host-bg.webp'); 
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('../images/host-bg.webp'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -293,7 +272,7 @@
     }
 
     .indexbg {
-        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/airbnb-home.jpg'); 
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('../images/airbnb-home.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -318,7 +297,7 @@
     }
 
     .starthostingbg {
-        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('/assets/images/host-bg1.webp'); 
+        background: linear-gradient(to right, rgba(0,0,0,0.9),transparent, transparent),url('../images/host-bg1.webp'); 
         background-size: cover;
         background-repeat: no-repeat;
         object-fit: cover;

@@ -4,9 +4,30 @@
 
 @layer components {
 
-    :root {
-        --cov19-bg-color:#222222;
-    }
+:root {
+    --cov19-bg-color:#222222;
+}
+
+        /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
     .text-xxs {
         font-size: 0.55rem;
@@ -161,7 +182,7 @@
         border-width: 1px !important;
         border-style: solid !important;
         outline: none !important;
-        padding: 13px 23px !important;
+        padding: 13px 23px;
         border-color: rgb(34, 34, 34) !important;
         background: rgb(255, 255, 255) !important;
         color: rgb(34, 34, 34) !important;
@@ -414,8 +435,6 @@
         .cov19 {
             color: #222222
         }
-  }
-
-    
+    }    
 
 }

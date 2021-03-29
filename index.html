@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--Swiper resources-->
+    <link href="/assets/css/swiper-bundle.min.css" rel="stylesheet">
+
     <!--Tailwind-->
     <link href="../../src/css/tailwind.css" rel="stylesheet">
-    <title>Airbnb tailwind</title>
+    <title>Airbnb Clone with Tailwind</title>
 </head>
 
 <body class="antialiased text-gray-800">
@@ -23,6 +26,7 @@
         </div>
     </section>
 
+    <!--Banner section-->
     <header class="pt-1 pb-5 bg-black md:p-5 lg:p-5">
         <div class="flex-wrap items-start justify-between hidden max-w-6xl px-5 mx-auto md:flex lg:flex">
             <a href="/" class="flex w-1/3 p-2">
@@ -46,8 +50,8 @@
 
             <div class="flex justify-end w-1/3 text-white">
                 <div class="flex items-center">
-                    <a href="#"
-                        class="p-3 text-sm font-semibold transition rounded-l-2xl rounded-r-2xl hover:bg-gray-800 min-w-max">Become
+                    <a href="/pages/host.html"
+                        class="p-3 text-sm font-semibold transition rounded-l-full rounded-r-full hover:bg-gray-800 min-w-max">Become
                         a host
                     </a>
 
@@ -65,7 +69,7 @@
                         </button>
                     </div>
 
-                    <div class="p-2 bg-white rounded-l-3xl rounded-r-3xl">
+                    <div class="p-2 bg-white rounded-l-full rounded-r-full">
                         <div class="relative">
                             <button class="flex items-center justify-center space-x-2">
                                 <div aria-label="Main navigation menu" class="inline-block">
@@ -82,7 +86,7 @@
                                 <div class="w-7" aria-hidden="true">
                                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                         role="presentation" focusable="false"
-                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #3f3e3e;">
+                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #5f5d5d;">
                                         <path
                                             d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
                                         </path>
@@ -96,10 +100,11 @@
             </div>
         </div>
 
-        <div class="relative max-w-4xl px-5 mx-auto my-2 lg:px-5 md:px-10" style="z-index: 2;">
+        <!--Search bar-->
+        <div class="relative max-w-4xl px-5 mx-auto my-2 lg:px-5 md:px-10" style="z-index: 2; ">
             <form action="#">
-                <div
-                    class="flex items-center justify-start p-2 overflow-x-hidden bg-white rounded-l-full rounded-r-full">
+                <div class="flex items-center justify-start p-2 overflow-x-hidden bg-white rounded-l-full rounded-r-full"
+                    style="box-shadow: 0px 16px 32px rgb(0 0 0 / 15%), 0px 3px 8px rgb(0 0 0 / 10%) !important">
 
                     <div class="relative flex items-center w-full px-3 lg:hidden md:hidden">
                         <div class="flex items-center pr-3">
@@ -147,9 +152,9 @@
                     </div>
 
                     <div class="relative justify-end hidden w-1/5 lg:flex md:flex">
-                        <button aria-expanded="true" type="button">
+                        <button aria-expanded="true" type="submit">
                             <span>
-                                <div class="flex items-center justify-center px-4 py-3 space-x-2 rounded-l-full rounded-r-full"
+                                <div class="flex items-center justify-center p-3 space-x-2 rounded-full lg:px-4 lg:py-3"
                                     style="background-color: rgb(255, 56, 92);">
                                     <div class="text-white"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                             aria-hidden="true" role="presentation" focusable="false"
@@ -180,12 +185,235 @@
 
         <div
             class="flex items-center justify-start md:justify-center lg:justify-center max-w-xxs lg:max-w-none md:max-w-none">
-            <p class="pl-5 pr-10 -mt-5 text-2xl font-light text-white lg:pb-5 lg:text-3xl">
+            <p class="pl-5 pr-10 -mt-5 text-2xl font-medium text-white lg:pb-5 lg:text-3xl">
                 Made possible by
                 Hosts
             </p>
         </div>
     </header>
+
+    <main class="max-w-6xl mx-auto my-14">
+
+        <!--section 1-->
+        <section class="px-5 md:px-10 ">
+            <div class="relative flex flex-wrap items-start space-y-5 lg:space-y-0 md:space-y-0">
+                <div class="w-full lg:w-1/2 md:w-1/2">
+                    <h3 class="w-full max-w-lg text-2xl font-semibold lg:text-3xl lg:font-bold lg:max-w-md md:text-3xl">
+                        We stand with the Asian and Pacific Islander community
+                    </h3>
+
+                </div>
+                <div class="w-full lg:w-1/2 md:w-1/2">
+                    <p class="w-full text-base leading-snug lg:leading-normal lg:text-lg md:text-base lg:max-w-md">
+                        We condemn racism, and denounce the violent acts that continue to happen to the Asian and
+                        Pacific Islander community.
+                        The number of anti-Asian hate crimes has alarmingly grown since the pandemic, and we call on our
+                        allies to join us in
+                        standing up to these injustices.
+                    </p>
+                </div>
+
+                <div class="relative top-0 lg:absolute md:absolute lg:top-24 md:top-32">
+                    <button class="px-4 py-2 btn">
+                        learn more
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--section 2-->
+        <section class="px-5 pb-10 pl-5 mt-24 mb-16 md:px-10 swiper-container swiper-container-h">
+            <div class="block mb-8">
+                <h2 class="text-3xl font-bold">Explore nearby</h2>
+            </div>
+
+            <div class="grid w-full grid-flow-col grid-rows-2 gap-y-4 lg:gap-4 md:gap-4 swiper-wrapper">
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Cape Coast</li>
+                        <li class="font-normal">2 hours drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Elima</li>
+                        <li class="font-normal">2 hours drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Kasoa</li>
+                        <li class="font-normal">30 minutes drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Accra </li>
+                        <li class="font-normal">15 minutes drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Tema</li>
+                        <li class="font-normal">45 minutes drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block overflow-hidden text-base leading-snug">
+                        <li class="font-semibold min-w-max">Adenta Municipality</li>
+                        <li class="font-normal">30 minutes drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">obgodjo</li>
+                        <li class="font-normal">30 minutes drive</li>
+                    </ul>
+                </a>
+                <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+                    <div><img src="" alt="" class="rounded-xl" style="width: 64px; height: 64px;"></div>
+                    <ul class="block text-base leading-snug">
+                        <li class="font-semibold">Madina</li>
+                        <li class="font-normal">15 minutes</li>
+                    </ul>
+                </a>
+            </div>
+            <!-- Add Pagination -->
+            <div
+                class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-h swiper-pagination-black lg:hidden">
+            </div>
+        </section>
+
+        <!--section 3-->
+        <section class="px-5 mb-10 md:px-10 swiper-container swiper-container-m">
+            <div class="block mb-8">
+                <h2 class="text-3xl font-bold">Explore nearby</h2>
+            </div>
+
+            <div class="flex items-center pb-10 swiper-wrapper">
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Entire homes</p>
+                    </div>
+                </a>
+
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Unique stays</p>
+                    </div>
+                </a>
+
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Cabins and Cottages</p>
+                    </div>
+                </a>
+
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Pets allowed</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Add Pagination -->
+            <div
+                class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-m swiper-pagination-black lg:hidden">
+            </div>
+        </section>
+
+        <!--Live anywhere-->
+        <section class="flex flex-col-reverse px-5 my-5 mb-10 lg:flex-row md:flex-row md:px-10">
+            <div class="relative w-full bg-gray-100 shadow-inner pb-1/2 md:pb-2/5 lg:pb-2/5">
+                <img src="/assets/images/indexCover3.webp" alt="" loading='lazy'
+                    class="absolute object-cover w-full h-full bg-center shadow-sm rounded-bl-xl rounded-br-xl lg:rounded-xl md:rounded-lg ">
+            </div>
+
+
+            <div
+                class="relative self-center w-full max-w-full py-5 space-y-4 text-center bg-black lg:text-left md:text-left px-14 rounded-tl-xl rounded-tr-xl lg:p-10 md:p-10 lg:bg-transparent lg:rounded-none md:rounded-none md:bg-transparent lg:absolute md:absolute lg:px-20 lg:max-w-lg md:max-w-md">
+                <div class="text-3xl font-semibold md:text-4xl lg:text-5xl">
+                    <span class="leading-tight text-white">Your world is worth sharing</span>
+                </div>
+                <div class="text-base font-normal leading-tight lg:text-lg md:text-base">
+                    <span class="leading-tight text-white">Turn your extra space into you next opportunity</span>
+                </div>
+                <div class="py-5">
+                    <a href="/pages/host.html"
+                        class="px-4 py-2 text-sm font-semibold transition bg-white rounded-l-lg rounded-r-lg lg:text-base">Become
+                        a host
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--section 5-->
+        <section class="px-5 md:px-10 swiper-container swiper-container-v">
+            <div class="block mb-8 space-y-2">
+                <h2 class="lg:text-4xl md:text=3xl text-2xl font-semibold lg:font-bold">Experience the world</h2>
+                <p class="font-light lg:text-3xl md:text=3xl text-xl">Unique activities with local experts—in person or
+                    online.
+                </p>
+            </div>
+
+            <div class="flex items-center pb-10 swiper-wrapper">
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Online Experiences</p>
+                        <span class="text-sm font-light">Travel the world without leaving home.</span>
+                    </div>
+                </a>
+
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Experiences</p>
+                        <span class="text-sm font-light">Things to do wherever you are.</span>
+                    </div>
+                </a>
+
+                <a href="#" class="block space-y-2 swiper-slide">
+                    <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+                        <img src="" alt="" class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">Adventure</p>
+                        <span class="text-sm font-light">multi-days trips with meals and stays.</span>
+                    </div>
+                </a>
+
+            </div>
+            <!-- Add Pagination -->
+            <div
+                class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-v swiper-pagination-black lg:hidden">
+            </div>
+        </section>
+
+    </main>
 
 
     <!--Footer-->
@@ -366,7 +594,7 @@
     </nav>
 
     <!--fixed bar on scroll-->
-    <header id="topNav" class="bottomMenu">
+    <nav id="topNav" class="bottomMenu">
         <div class="flex justify-between w-full h-10 max-w-6xl mx-auto">
             <a href="/" class="flex w-1/3 p-2">
                 <h1 class="flex space-x-1 ">
@@ -410,8 +638,8 @@
 
             <div class="flex justify-end w-1/3">
                 <div class="flex items-center">
-                    <a href="#"
-                        class="p-3 text-sm font-semibold transition rounded-l-2xl rounded-r-2xl hover:bg-gray-100 min-w-max">Become
+                    <a href="/pages/host.html"
+                        class="p-3 text-sm font-semibold transition rounded-l-full rounded-r-full hover:bg-gray-100 min-w-max">Become
                         a host
                     </a>
 
@@ -446,7 +674,7 @@
                                 <div class="w-7" aria-hidden="true">
                                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
                                         role="presentation" focusable="false"
-                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #3f3e3e;">
+                                        style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #5f5d5d;">
                                         <path
                                             d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
                                         </path>
@@ -459,8 +687,7 @@
                 </div>
             </div>
         </div>
-    </header>
-
+    </nav>
 
     <!--Show top banner on scrool-->
     <script>
@@ -474,6 +701,85 @@
             }
         };
         window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiperV = new Swiper('.swiper-container-v', {
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination-v',
+            }
+        });
+        var swiperH = new Swiper('.swiper-container-h', {
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 2,
+                    spaceBetween: 0
+                },
+
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    slidesPerColumn: 2,
+                    spaceBetween: 0
+                },
+
+                960: {
+                    slidesPerView: 4,
+                    slidesPerColumn: 2,
+                    spaceBetween: 0
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination-h',
+            }
+        });
+        var swiperM = new Swiper('.swiper-container-m', {
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 20
+                },
+
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+
+                960: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination-m',
+            }
+        });
     </script>
 </body>
 

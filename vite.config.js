@@ -4,7 +4,8 @@ module.exports = {
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html')
+                main: resolve(__dirname, 'index.html'),
+                nested: resolve(__dirname, 'page/host.html')
             }
         }
     }

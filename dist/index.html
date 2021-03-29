@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Swiper resources-->
+  <link href="/assets/css/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--Tailwind-->
+  
+  <title>Airbnb Clone with Tailwind</title>
+<script type="module" crossorigin src="/assets/index.d283b366.js"></script>
+  <link rel="stylesheet" href="/assets/index.8d563327.css">
+</head>
+
+<body class="antialiased text-gray-800">
+
+  <!--Cov19 top banner-->
+  <section class="p-4 md:p-5 lg:p-5 covbg">
+    <div class="flex items-center justify-center max-w-6xl px-5 mx-auto">
+      <a href="#" class="text-xs font-medium underline transition md:text-sm lg:text-sm cov19">
+        Get the latest on our COVID-19 response
+      </a>
+    </div>
+  </section>
+
+  <!--Banner section-->
+  <header class="pt-1 pb-5 bg-black md:p-5 lg:p-5">
+    <div class="flex-wrap items-start justify-between hidden max-w-6xl px-5 mx-auto md:flex lg:flex">
+      <a href="/" class="flex w-1/3 p-2">
+        <h1 class="flex space-x-1">
+          <span class="sr-only"> Airbnb </span>
+          <svg fill="#fff" style="display: block;" class="w-8 h-8">
+            <path
+              d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+            </path>
+          </svg>
+          <span class="hidden text-xl font-bold text-white md:hidden lg:block">airbnb</span>
+        </h1>
+      </a>
+
+      <div class="flex items-end justify-center w-1/3 space-x-1 text-base text-white h-28 lg:h-auto lg:items-center">
+        <a href="" class="p-2 hover:text-gray-300 min-w-max">Places to stay</a>
+        <a href="" class="p-2 hover:text-gray-300 min-w-max">Experiences</a>
+        <a href="" class="p-2 hover:text-gray-300 min-w-max">Online Experiences</a>
+      </div>
+
+      <div class="flex justify-end w-1/3 text-white">
+        <div class="flex items-center">
+          <a href="/pages/host.html"
+            class="p-3 text-sm font-semibold transition rounded-l-full rounded-r-full hover:bg-gray-800 min-w-max">Become
+            a host
+          </a>
+
+          <div class="p-1">
+            <button class="p-4 rounded-full hover:bg-gray-800">
+              <div class="flex items-center justify-center text-center">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                  <path
+                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                  </path>
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div class="p-2 bg-white rounded-l-full rounded-r-full">
+            <div class="relative">
+              <button class="flex items-center justify-center space-x-2">
+                <div aria-label="Main navigation menu" class="inline-block">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; color: #222222;">
+                    <g fill="none" fill-rule="nonzero">
+                      <path d="m2 16h28"></path>
+                      <path d="m2 24h28"></path>
+                      <path d="m2 8h28"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="w-7" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #5f5d5d;">
+                    <path
+                      d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                    </path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Search bar-->
+    <div class="relative max-w-4xl px-5 mx-auto my-2 lg:px-5 md:px-10" style="z-index: 2; ">
+      <form action="../pages/main-explore.html" method="GET" class="hidden lg:block md:block">
+        <div class="flex items-center justify-start p-2 overflow-x-hidden bg-white rounded-l-full rounded-r-full"
+          style="box-shadow: 0px 16px 32px rgb(0 0 0 / 15%), 0px 3px 8px rgb(0 0 0 / 10%) !important">
+
+          <div class="relative hidden pl-3 lg:block md:block">
+            <label for="form-email1" class="absolute font-semibold text-gray-800 form-labels">Location</label>
+            <input type="text" id="form-email1" class="text-base text-gray-800 outline-none"
+              placeholder="Where are you going ?" style="margin-top: 10px;">
+          </div>
+
+          <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+            <label for="form-email2" class="absolute font-semibold text-gray-800 form-labels">Check
+              in</label>
+            <input type="text" id="form-email2" class="text-base text-gray-600 outline-none" placeholder="Add dates"
+              style="margin-top: 10px;">
+          </div>
+
+          <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+            <label for="form-email3" class="absolute font-semibold text-gray-800 form-labels">Check
+              out</label>
+            <input type="text" id="form-email3" class="text-base text-gray-600 outline-none" placeholder="Add dates"
+              style="margin-top: 10px;">
+          </div>
+
+          <div class="relative hidden w-1/5 pl-3 lg:block md:block">
+            <label for="form-email4" class="absolute font-semibold text-gray-800 form-labels">Guests</label>
+            <input type="text" id="form-email4" class="text-base text-gray-600 outline-none" placeholder="Add guests"
+              style="margin-top: 10px;">
+          </div>
+
+          <div class="relative justify-end hidden w-1/5 lg:flex md:flex">
+            <button class="focus:outline-none btn_animate" name="search" type="submit">
+              <span>
+                <div class="flex items-center justify-center p-3 space-x-2 rounded-full outline-none lg:px-4 lg:py-3"
+                  style="background-color: rgb(255, 56, 92);">
+                  <div class="text-white"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                      role="presentation" focusable="false"
+                      style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                      <g fill="none">
+                        <path
+                          d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                        </path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="hidden font-semibold text-white md:hidden lg:block">Search</div>
+                </div>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <form action="../pages/main-explore.html" class="block lg:hidden md:hidden">
+        <div class="flex items-center justify-start p-2 overflow-x-hidden bg-white rounded-l-full rounded-r-full"
+          style="box-shadow: 0px 16px 32px rgb(0 0 0 / 15%), 0px 3px 8px rgb(0 0 0 / 10%) !important">
+          <div class="relative flex items-center w-full px-3 ">
+            <div class="flex items-center pr-3">
+              <button aria-label="Search" type="submit" class="text-pink-700">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false"
+                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                  <g fill="none">
+                    <path
+                      d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                    </path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <input id="form-search" type="search" class="text-base text-gray-700 outline-none"
+              placeholder="Where are you going ?" required>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="relative mx-5" style="z-index: 1; top: -50px;">
+      <picture>
+        <source media="(max-width:640px)" srcset="/assets/images/indexCover1.webp">
+        <source media="(max-width:1024px)" srcset="/assets/images/indexCover.webp">
+        <img src="/assets/images/indexCover2.webp" alt="" class="object-center w-full rounded h-96">
+      </picture>
+    </div>
+
+    <div
+      class="flex items-center justify-start md:justify-center lg:justify-center max-w-xxs lg:max-w-none md:max-w-none">
+      <p class="pl-5 pr-10 -mt-5 text-2xl font-medium text-white lg:pb-5 lg:text-3xl">
+        Made possible by
+        Hosts
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto my-14">
+
+    <!--section 1-->
+    <section class="px-5 md:px-10 ">
+      <div class="relative flex flex-wrap items-start space-y-5 lg:space-y-0 md:space-y-0">
+        <div class="w-full lg:w-1/2 md:w-1/2">
+          <h3 class="w-full max-w-lg text-2xl font-semibold lg:text-3xl lg:font-bold lg:max-w-md md:text-3xl">
+            We stand with the Asian and Pacific Islander community
+          </h3>
+
+        </div>
+        <div class="w-full lg:w-1/2 md:w-1/2">
+          <p class="w-full text-base leading-snug lg:leading-normal lg:text-lg md:text-base lg:max-w-md">
+            We condemn racism, and denounce the violent acts that continue to happen to the Asian and
+            Pacific Islander community.
+            The number of anti-Asian hate crimes has alarmingly grown since the pandemic, and we call on our
+            allies to join us in
+            standing up to these injustices.
+          </p>
+        </div>
+
+        <div class="relative top-0 lg:absolute md:absolute lg:top-24 md:top-32">
+          <button class="px-4 py-2 btn">
+            learn more
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!--section 2-->
+    <section class="px-5 pb-10 pl-5 mt-24 mb-16 md:px-10 swiper-container swiper-container-h">
+      <div class="block mb-8">
+        <h2 class="text-3xl font-bold">Explore nearby</h2>
+      </div>
+      <div class="grid w-full grid-flow-col grid-rows-2 gap-y-4 lg:gap-4 md:gap-4 swiper-wrapper">
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index1.webp" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Cape Coast</li>
+            <li class="font-normal">2 hours drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index2.jpg" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Elima</li>
+            <li class="font-normal">2 hours drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index3.jpg" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Kasoa</li>
+            <li class="font-normal">30 minutes drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index4.webp" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Accra</li>
+            <li class="font-normal">15 minutes drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index4.webp" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Tema</li>
+            <li class="font-normal">45 minutes drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index3.jpg" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block overflow-hidden text-base leading-snug">
+            <li class="font-semibold min-w-max">Adenta Municipality</li>
+            <li class="font-normal">30 minutes drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index2.jpg" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">obgodjo</li>
+            <li class="font-normal">30 minutes drive</li>
+          </ul>
+        </a>
+        <a href="#" class="flex items-center justify-start space-x-4 swiper-slide">
+          <div>
+            <img src="/assets/images/index1.webp" alt="" class="rounded-xl" style="width: 64px; height: 64px;">
+          </div>
+          <ul class="block text-base leading-snug">
+            <li class="font-semibold">Madina</li>
+            <li class="font-normal">15 minutes</li>
+          </ul>
+        </a>
+      </div>
+      <!-- Add Pagination -->
+      <div class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-h swiper-pagination-black lg:hidden" />
+    </section>
+    <!--section 3-->
+    <section class="px-5 mb-10 md:px-10 swiper-container swiper-container-m">
+      <div class="block mb-8">
+        <h2 class="text-3xl font-bold">Explore nearby</h2>
+      </div>
+      <div class="flex items-center pb-10 swiper-wrapper">
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index7.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Entire homes</p>
+          </div>
+        </a>
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index6.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Unique stays</p>
+          </div>
+        </a>
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index8.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Cabins and Cottages</p>
+          </div>
+        </a>
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index9.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Pets allowed</p>
+          </div>
+        </a>
+      </div>
+      <!-- Add Pagination -->
+      <div class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-m swiper-pagination-black lg:hidden" />
+    </section>
+    <!--Live anywhere-->
+    <section class="flex flex-col-reverse px-5 my-5 mb-10 lg:flex-row md:flex-row md:px-10">
+      <div class="relative w-full bg-gray-100 shadow-inner pb-1/2 md:pb-2/5 lg:pb-2/5">
+        <img src="/assets/images/indexCover3.webp" alt="" loading='lazy'
+          class="absolute object-cover w-full h-full bg-center shadow-sm rounded-bl-xl rounded-br-xl lg:rounded-xl md:rounded-lg ">
+      </div>
+      <div
+        class="relative self-center w-full max-w-full py-5 space-y-4 text-center bg-black lg:text-left md:text-left px-14 rounded-tl-xl rounded-tr-xl lg:p-10 md:p-10 lg:bg-transparent lg:rounded-none md:rounded-none md:bg-transparent lg:absolute md:absolute lg:px-20 lg:max-w-lg md:max-w-md">
+        <div class="text-3xl font-semibold md:text-4xl lg:text-5xl">
+          <span class="leading-tight text-white">Your world is worth sharing</span>
+        </div>
+        <div class="text-base font-normal leading-tight lg:text-lg md:text-base">
+          <span class="leading-tight text-white">Turn your extra space into you next opportunity</span>
+        </div>
+        <div class="py-5">
+          <a href="/pages/host.html"
+            class="px-4 py-2 text-sm font-semibold transition bg-white rounded-l-lg rounded-r-lg lg:text-base">Become
+            a
+            host</a>
+        </div>
+      </div>
+    </section>
+    <!--section 5-->
+    <section class="px-5 md:px-10 swiper-container swiper-container-v">
+      <div class="block mb-8 space-y-2">
+        <h2 class="lg:text-4xl md:text=3xl text-2xl font-semibold lg:font-bold">Experience the world</h2>
+        <p class="font-light lg:text-3xl md:text=3xl text-xl">Unique activities with local experts—in person or online.
+        </p>
+      </div>
+      <div class="flex items-center pb-10 swiper-wrapper">
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index10.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Online Experiences</p>
+            <span class="text-sm font-light">Travel the world without leaving home.</span>
+          </div>
+        </a>
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index11.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Experiences</p>
+            <span class="text-sm font-light">Things to do wherever you are.</span>
+          </div>
+        </a>
+        <a href="#" class="block space-y-2 swiper-slide">
+          <div class="relative rounded-t-lg rounded-b-lg lg:pb-1/1 pb-2/2">
+            <img src="/assets/images/index12.webp" alt=""
+              class="absolute object-cover w-full h-full rounded-t-lg rounded-b-lg">
+          </div>
+          <div>
+            <p class="text-lg font-semibold">Adventure</p>
+            <span class="text-sm font-light">multi-days trips with meals and stays.</span>
+          </div>
+        </a>
+      </div>
+      <!-- Add Pagination -->
+      <div class="px-5 text-left md:px-10 swiper-pagination swiper-pagination-v swiper-pagination-black lg:hidden" />
+    </section>
+
+  </main>
+
+
+  <!--Footer-->
+  <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
+    <div class="max-w-6xl px-5 pb-8 mx-auto border-b border-gray-300">
+      <div class="flex flex-wrap items-start justify-start">
+        <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+          <h5 class="mb-2 font-semibold tex-gray-700">Airbnb</h5>
+          <ul class="space-y-1 leading-loose">
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Careers</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">News</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Policies</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">help</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Diversity &
+                Belonging</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+          <h5 class="mb-2 font-semibold tex-gray-700">Discover</h5>
+          <ul class="space-y-1 leading-loose">
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Trust & Safety</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Travel Credit</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Gift Cards</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Airbnb Citizen</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                Travel</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Things To Do <span
+                  class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                Travel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+          <h5 class="mb-2 font-semibold tex-gray-700">Hosting</h5>
+          <ul class="space-y-1 leading-loose">
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Why Host</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Hospitality</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Responsible
+                Hosting</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Community
+                Center</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Host an Experience
+                <span class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Open House</a>
+            </li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Donations <span
+                  class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+          <h5 class="flex items-start justify-start mb-2 font-semibold tex-gray-700">
+            <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="w-3 h-3 mr-2 text-gray-700"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-6.932 0-5.046 7.85-5.322 9h-3.487v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z"
+                fill="#3b5999" />
+            </svg>
+            <svg viewBox="0 0 512.00096 512.00096" class="w-3 h-3 mr-2 text-gray-700"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0" />
+              <path
+                d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0" />
+              <path
+                d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" />
+            </svg>
+
+            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Capa_1" class="w-3 h-3 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+              style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path style="fill:#03A9F4;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+	c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+	c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+	c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+	c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+	c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+	C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+	C480.224,136.96,497.728,118.496,512,97.248z" />
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg>
+
+          </h5>
+          <ul class="space-y-1 leading-loose">
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Terms</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Pricacy</a></li>
+            <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center max-w-6xl p-5 mx-auto lg:px-0">
+      <p class="pl-1 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
+    </div>
+  </footer>
+
+  <!--botton nav mobile-->
+  <nav
+    class="sticky bottom-0 left-0 right-0 z-50 flex flex-row items-center justify-center px-5 py-3 space-x-20 bg-white border-t border-gray-300 md:hidden lg:">
+    <a href="#" class="block">
+      <div class="flex items-center justify-center p-1" style="color: #FF385C;">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+          focusable="false"
+          style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+          <g fill="none">
+            <path
+              d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="text-xs font-semibold text-gray-900">Explore</div>
+    </a>
+    <a href="#" class="block">
+      <div class="flex items-center justify-center p-1 text-gray-400">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+          focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+          <path
+            d="m23 3c2.106801 0 4.1361668.82306574 5.6571068 2.34289322 1.5202187 1.52021874 2.3428932 3.54936205 2.3428932 5.65710678 0 6.1258166-4.1336896 10.7413484-13.2771622 17.0360378l-.4613525.3161485-1.2603024.8557461-.561306-.379523c-10.08413946-6.8183189-14.4398769-11.4368525-14.4398769-17.8284094 0-2.1072166.82336538-4.13657894 2.34389322-5.65710678 1.51945266-1.51945266 3.54974264-2.34289322 5.65610678-2.34289322 2.0014609 0 3.9330366.74281683 5.4253543 2.12030845l.2319249.22275721 1.3417208 1.34293434 1.3448932-1.34310678c1.3675074-1.36750739 3.148793-2.17124499 5.0269145-2.31831743l.3138626-.01841591zm0 2c-1.4881441 0-2.9222843.54615204-4.0367433 1.5612911l-.2051499.19581568-2.7582792 2.75827923-2.7566756-2.75802055c-1.1419182-1.14108286-2.6614358-1.75736546-4.243152-1.75736546-1.58115306 0-3.10134088.61655445-4.24189322 1.75710678-1.14169457 1.14169457-1.75810678 2.660976-1.75810678 4.24289322 0 5.1012962 3.53044809 9.1738639 11.7845794 14.9510839l.8707748.6038363.3446458.2350798.5857119-.3992616.8733618-.6071874c7.706855-5.4127073 11.2817846-9.4483722 11.5273066-14.2471091l.0102199-.2673951.0033998-.2690468c0-1.5826219-.6158555-3.1016419-1.756848-4.24263454-1.1419182-1.14108286-2.6614358-1.75736546-4.243152-1.75736546z">
+          </path>
+        </svg>
+      </div>
+      <div class="text-xs font-semibold text-gray-500 hover:text-gray-900">Saved</div>
+    </a>
+    <a href="#" class="block">
+      <div class="flex items-center justify-center p-1 text-gray-400">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+          focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+          <path
+            d="m16 1c8.2842712 0 15 6.71572875 15 15 0 8.2842712-6.7157288 15-15 15-8.28427125 0-15-6.7157288-15-15 0-8.28427125 6.71572875-15 15-15zm0 8c-2.7614237 0-5 2.2385763-5 5 0 2.0143973 1.2022141 3.7998876 2.9996346 4.5835001l.0003231 2.0984999-.1499943.0278452c-2.8326474.5613112-5.31897338 2.2230336-6.93575953 4.5872979 2.34343054 2.291067 5.54974273 3.7028569 9.08579613 3.7028569 3.5355506 0 6.7414538-1.4113884 9.0850203-3.701476-1.6141801-2.3628535-4.0978119-4.0247647-6.929184-4.5867938l-.1558786-.0287302.001228-2.0991413c1.7288399-.7547474 2.9066959-2.4357565 2.9936498-4.355479l.0051645-.2283797c0-2.7614237-2.2385763-5-5-5zm0-6c-7.17970175 0-13 5.82029825-13 13 0 2.9045768.95257276 5.5866683 2.56235849 7.7509147 1.42074739-1.9134907 3.33951478-3.4002416 5.53860831-4.2955956l.3480332-.1363191-.0229565-.0189706c-1.43704227-1.2411241-2.34462949-3.045583-2.42083359-5.0285539l-.00520991-.2714755c0-3.8659932 3.1340068-7 7-7s7 3.1340068 7 7c0 1.9941317-.8415062 3.8279876-2.224566 5.1193683l-.225434.2006317.0447787.0163138c2.3268368.8792152 4.3570558 2.4138611 5.8430586 4.4127726 1.6098837-2.1632453 2.5621627-4.8449575 2.5621627-7.7490864 0-7.17970175-5.8202983-13-13-13z">
+          </path>
+        </svg>
+      </div>
+      <div class="text-xs font-semibold text-gray-500 hover:text-gray-900">Log in</div>
+    </a>
+  </nav>
+
+  <!--fixed bar on scroll-->
+  <nav id="topNav" class="bottomMenu">
+    <div class="flex justify-between w-full h-10 max-w-6xl mx-auto">
+      <a href="/" class="flex w-1/3 p-2">
+        <h1 class="flex space-x-1 ">
+          <span class="sr-only"> Airbnb </span>
+          <svg fill="rgb(255, 56, 92)" style="display: block;" class="w-8 h-8 text-pink-600">
+            <path
+              d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+            </path>
+          </svg>
+          <span class="hidden text-xl font-bold md:hidden lg:block" style="color: rgb(255, 56, 92);">airbnb</span>
+        </h1>
+      </a>
+
+      <div
+        class="relative flex items-center justify-start w-1/3 pl-4 pr-1 border rounded-l-full rounded-r-full max-w-min">
+        <input type="text" id="form-email5" class="text-base text-left text-gray-700 outline-none"
+          placeholder="Where are you going ?" required>
+        <div class="flex items-center">
+          <button aria-expanded="true" type="button">
+            <span>
+              <div class="flex items-center justify-center p-2 rounded-full"
+                style="background-color: rgb(255, 56, 92);">
+                <div class="text-white">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                    <g fill="none">
+                      <path
+                        d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                      </path>
+                    </g>
+                  </svg>
+                </div>
+
+              </div>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex justify-end w-1/3">
+        <div class="flex items-center">
+          <a href="/pages/host.html"
+            class="p-3 text-sm font-semibold transition rounded-l-full rounded-r-full hover:bg-gray-100 min-w-max">Become
+            a host
+          </a>
+
+          <div class="p-1">
+            <button class="p-4 rounded-full hover:bg-gray-100">
+              <div class="flex items-center justify-center text-center">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                  focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                  <path
+                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                  </path>
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div class="p-2 border rounded-l-full rounded-r-full">
+            <div class="relative">
+              <button class="flex items-center justify-center space-x-2">
+                <div aria-label="Main navigation menu" class="inline-block">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; color: #222222;">
+                    <g fill="none" fill-rule="nonzero">
+                      <path d="m2 16h28"></path>
+                      <path d="m2 24h28"></path>
+                      <path d="m2 8h28"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="w-7" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    focusable="false"
+                    style="display: block; height: 100%; width: 100%; fill: currentcolor; color: #5f5d5d;">
+                    <path
+                      d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                    </path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--Show top banner on scrool-->
+  <script>
+    myID = document.getElementById("topNav");
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 135) {
+        myID.className = "topMenu show hidden md:flex lg:flex"
+      } else {
+        myID.className = "topMenu hide"
+      }
+    };
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperV = new Swiper('.swiper-container-v', {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination-v',
+      }
+    });
+    var swiperH = new Swiper('.swiper-container-h', {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          slidesPerColumn: 2,
+          spaceBetween: 0
+        },
+
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          slidesPerColumn: 2,
+          spaceBetween: 0
+        },
+
+        960: {
+          slidesPerView: 4,
+          slidesPerColumn: 2,
+          spaceBetween: 0
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination-h',
+      }
+    });
+    var swiperM = new Swiper('.swiper-container-m', {
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 'auto',
+          spaceBetween: 20
+        },
+
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+
+        960: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        }
+      },
+      pagination: {
+        el: '.swiper-pagination-m',
+      }
+    });
+  </script>
+</body>
+
+</html>

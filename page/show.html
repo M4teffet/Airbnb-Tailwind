@@ -22,9 +22,10 @@
 
     <main>
         <section id="photos" class="flex flex-col items-center justify-start mx-0 lg:mx-10 md:mx-5 nax-w-5xl">
+
             <!--sticky Top header mobile-->
             <section
-                class="flex flex-row items-center justify-between w-full px-2 py-3 sm:bg-gray-100 md:hidden lg:hidden">
+                class="top-0 left-0 right-0 z-50 flex flex-row items-center justify-between w-full px-2 py-3 sm:bg-gray-100 md:hidden lg:hidden">
                 <div class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                         class="w-5 h-5 fill-current stoke-1">
@@ -50,21 +51,6 @@
 
                 </div>
             </section>
-
-            <!--fixed bar on scroll-->
-            <header id="myID" class="bottomMenu">
-                <nav class="flex items-center justify-start w-full max-w-5xl mx-auto space-x-5">
-                    <div class="text-sm font-semibold text-gray-900">
-                        <a class="px-2 link-active" href="#photos">Photos</a>
-                    </div>
-                    <div class="text-sm font-semibold text-gray-900">
-                        <a class="px-2 link-active" href="#amenities">Amenities</a>
-                    </div>
-                    <div class="p-1 text-sm font-semibold text-gray-900 ">
-                        <a class="px-2 link-active" href="#reviews">reviews</a>
-                    </div>
-                </nav>
-            </header>
 
             <!--Mobile banner-->
             <section class="flex flex-col w-full lg:items-center md:flex-col-reverse lg:flex-col-reverse ">
@@ -1170,6 +1156,21 @@
             <p class="pl-1 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
         </div>
     </footer>
+
+    <!--fixed bar on scroll-->
+    <section id="myID" class="bottomMenu">
+        <nav class="flex items-center justify-start w-full max-w-5xl mx-auto space-x-5">
+            <div class="text-sm font-semibold text-gray-900">
+                <a class="px-2 link-active" href="#photos">Photos</a>
+            </div>
+            <div class="text-sm font-semibold text-gray-900">
+                <a class="px-2 link-active" href="#amenities">Amenities</a>
+            </div>
+            <div class="p-1 text-sm font-semibold text-gray-900 ">
+                <a class="px-2 link-active" href="#reviews">reviews</a>
+            </div>
+        </nav>
+    </section>
 
     <!--botton nav mobile-->
     <section

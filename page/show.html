@@ -67,8 +67,7 @@
             </header>
 
             <!--Mobile banner-->
-            <section
-                class="flex flex-col w-full lg:items-center md:flex-col-reverse lg:flex-col-reverse swiper-container">
+            <section class="flex flex-col w-full lg:items-center md:flex-col-reverse lg:flex-col-reverse ">
 
                 <div
                     class="relative grid max-w-5xl grid-cols-none gap-2 md:mx-0 lg:mx-0 lg:mb-3 md:grid-cols-4 lg:grid-cols-4">
@@ -91,7 +90,7 @@
                             class="object-cover w-full h-full rounded-0 md:rounded-br-xl lg:rounded-br-xl ">
                     </div>
                     <button
-                        class="absolute flex items-center justify-center px-2 py-2 space-x-2 transition bg-gray-200 border-transparent rounded-md focus:outline-none hover:shadow-lg hover:bg-white bottom-2 right-2 hover:text-black">
+                        class="absolute items-center justify-center hidden px-2 py-2 space-x-2 transition bg-gray-200 border-transparent rounded-md md:flex lg:flex focus:outline-none hover:shadow-lg hover:bg-white bottom-2 right-2 hover:text-black">
                         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" role="presentation"
                                 aria-hidden="true" focusable="false"
                                 style="height: 12px; width: 12px; display: block; fill: currentcolor;"
@@ -111,25 +110,28 @@
                 </div>
 
                 <div
-                    class="relative grid max-w-5xl grid-cols-1 gap-0 md:mx-0 md:grid-cols-none lg:grid-cols-none swiper-wrapper">
-                    <div
-                        class="block row-span-2 text-center md:col-span-2 lg:col-span-2 swiper-slide lg:hidden md:hidden">
-                        <img src="../assets/images/5.jpg" loading="lazy" alt=""
-                            class="object-cover w-full h-full rounded-0">
-                    </div>
-                    <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
-                        <img src="../assets/images/10.jpg" loading="lazy" alt="" class="object-cover w-full h-full">
-                    </div>
-                    <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
-                        <img src="../assets/images/11.jpg" loading="lazy" alt=""
-                            class="object-cover w-full h-full rounded-0">
-                    </div>
-                    <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
-                        <img src="../assets/images/12.jpg" loading="lazy" alt="" class="object-cover w-full h-full">
-                    </div>
-                    <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
-                        <img src="../assets/images/13.jpg" loading="lazy" alt=""
-                            class="object-cover w-full h-full rounded-0">
+                    class="relative grid max-w-5xl grid-cols-1 gap-0 md:mx-0 md:grid-cols-none lg:grid-cols-none swiper-container swiper-container-v">
+
+                    <div class="swiper-wrapper">
+                        <div
+                            class="block row-span-2 text-center md:col-span-2 lg:col-span-2 swiper-slide lg:hidden md:hidden">
+                            <img src="../assets/images/5.jpg" loading="lazy" alt=""
+                                class="object-cover w-full h-full rounded-0">
+                        </div>
+                        <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
+                            <img src="../assets/images/10.jpg" loading="lazy" alt="" class="object-cover w-full h-full">
+                        </div>
+                        <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
+                            <img src="../assets/images/11.jpg" loading="lazy" alt=""
+                                class="object-cover w-full h-full rounded-0">
+                        </div>
+                        <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
+                            <img src="../assets/images/12.jpg" loading="lazy" alt="" class="object-cover w-full h-full">
+                        </div>
+                        <div class="block text-center bg-gray-300 lg:hidden md:hidden swiper-slide">
+                            <img src="../assets/images/13.jpg" loading="lazy" alt=""
+                                class="object-cover w-full h-full rounded-0">
+                        </div>
                     </div>
                 </div>
 
@@ -906,18 +908,18 @@
                     <div class="hidden lg:block md:block">
                         <div class="absolute right-0 top-5">
                             <div
-                                class="bg-white border border-gray-200 rounded-full swiper-button-next swiper-button-black swiper_btn">
+                                class="bg-white border border-gray-200 rounded-full swiper-button-next swiper-button-next-h swiper-button-black swiper_btn">
                             </div>
                         </div>
                         <div class="absolute top-5 right-28">
                             <div
-                                class="bg-white border border-gray-200 rounded-full swiper-button-prev swiper-button-black swiper_btn">
+                                class="bg-white border border-gray-200 rounded-full swiper-button-prev swiper-button-prev-h swiper-button-black swiper_btn">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex items-start lg:my-2 swiper-container">
+                <div class="flex items-start lg:my-2 swiper-container swiper-container-h">
 
                     <div class="swiper-wrapper">
                         <a href="../page/show.html" class="relative w-full mb-8 swiper-slide lg:w-1/2 md:w-1/2 lg:mb-0">
@@ -1200,7 +1202,7 @@
     <script src="/assets/js/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiperH = new Swiper('.swiper-container-h', {
             breakpoints: {
                 // when window width is >= breakpoint
                 220: {
@@ -1217,11 +1219,19 @@
                 },
             },
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-h',
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next-h',
+                prevEl: '.swiper-button-prev-h',
+            }
+        });
+        const swiperV = new Swiper('.swiper-container-v', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
             }
         });
     </script>

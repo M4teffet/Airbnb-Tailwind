@@ -5,8 +5,8 @@ module.exports = {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                nested: resolve(__dirname, 'page/host.html'),
-                nested: resolve(__dirname, 'page/main-explore.html')
+                host: resolve(__dirname, 'page/host.html'),
+                mainexplore: resolve(__dirname, 'page/main-explore.html')
             }
         }
     }

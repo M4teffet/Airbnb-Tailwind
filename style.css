@@ -414,6 +414,18 @@
         .cov19 {
             color: #222222
         }
-    }    
+    }
+    
+    .shownavtop {
+        padding: 1rem 0 1rem 0;
+        z-index: 100 !important;
+    }
+
+    ._10u04nz {
+        background-color: rgb(221, 221, 221) !important;
+        flex: 0 0 1px !important;
+        height: 24px !important;
+        width: 1px !important;
+    }   
 
 }

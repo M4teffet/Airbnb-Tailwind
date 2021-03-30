@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swiper resources-->
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--Tailwind-->
+    <link href="/style.css" rel="stylesheet">
+
+    <!--Alpinejs-->
+    <script src="../assets/js/app.js"></script>
+
+    <title>Akua's Profile-Airbnb</title>
+</head>
+
+<body class="antialiased text-gray-700">
+    <nav></nav>
+
+    <main class="flex flex-col mx-5 my-10 md:mx-10 lg:justify-center lg:items-start lg:mx-auto lg:max-w-5xl">
+
+        <!--1 4-->
+        <section
+            class="flex flex-row-reverse items-start justify-between w-full lg:flex-row lg:items-start lg:justify-start">
+            <div
+                class="flex lg:w-1/3 lg:p-5 lg:mr-10 lg:border-t lg:border-l lg:border-r lg:rounded-t-xl lg:border-gray-300">
+                <img src="/assets/images/avatar-1.svg" alt=""
+                    class="flex-shrink-0 w-20 h-20 mx-auto rounded-full select-none lg:w-36 lg:h-36">
+            </div>
+
+            <div class="lg:w-2/3 lg:ml-10">
+                <h1 class="pb-2 text-3xl font-semibold lg:text-3xlp">Hi, I'm Akua</h1>
+                <p class="pb-8 text-sm font-normal text-gray-500">Joined in 2015</p>
+            </div>
+        </section>
+
+        <!--2 5-->
+        <section class="flex flex-col w-full lg:flex-row lg:items-start lg:justify-start">
+            <div class="flex flex-col lg:w-1/3 lg:px-5 lg:mr-10 lg:border-l lg:border-r lg:border-gray-300">
+                <div class="flex items-start justify-start mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                        style="display:block;height:24px;width:24px;fill:currentColor" aria-hidden="true"
+                        role="presentation" focusable="false">
+                        <path
+                            d="M16.996 15.185l3.537-1.987c1.93-1.082 3.8-2.126 5.61-3.132.529-.294.857-.852.857-1.457V2.668C27 1.748 26.254 1 25.333 1H6.667A1.669 1.669 0 0 0 5 2.668v5.94c0 .606.328 1.164.857 1.458l3.323 1.852a1970.5 1970.5 0 0 1 5.827 3.27c.694.39 1.293.39 1.989-.003zm-.981-1.742l-.014.011-.013-.01-3.542-1.99c-1.16-.65-2.298-1.287-3.414-1.91L7 8.414V3.002h18v5.412l-3.155 1.758a2000.26 2000.26 0 0 0-5.83 3.27zM16 17a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-base font-semibold text-gray-700 "> Superhost</p>
+                </div>
+
+                <div class="flex flex-row items-start justify-start mb-3">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                        style="display:block;height:24px;width:24px;fill:currentColor" aria-hidden="true"
+                        role="presentation" focusable="false">
+                        <path
+                            d="M14.998 1.032a2 2 0 0 0-.815.89l-3.606 7.766L1.951 10.8a2 2 0 0 0-1.728 2.24l.031.175A2 2 0 0 0 .87 14.27l6.36 5.726-1.716 8.608a2 2 0 0 0 1.57 2.352l.18.028a2 2 0 0 0 1.215-.259l7.519-4.358 7.52 4.358a2 2 0 0 0 2.734-.727l.084-.162a2 2 0 0 0 .147-1.232l-1.717-8.608 6.361-5.726a2 2 0 0 0 .148-2.825l-.125-.127a2 2 0 0 0-1.105-.518l-8.627-1.113-3.606-7.765a2 2 0 0 0-2.656-.971zm-3.07 10.499l4.07-8.766 4.07 8.766 9.72 1.252-7.206 6.489 1.938 9.723-8.523-4.94-8.522 4.94 1.939-9.723-7.207-6.489z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-base font-semibold text-gray-700 ">31 reviews</p>
+                </div>
+
+                <div class="flex items-start justify-start border-b border-gray-200 pb-7">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                        style="display:block;height:24px;width:24px;fill:currentColor" aria-hidden="true"
+                        role="presentation" focusable="false">
+                        <path
+                            d="M16 .798l.555.37C20.398 3.73 24.208 5 28 5h1v12.5C29 25.574 23.21 31 16 31S3 25.574 3 17.5V5h1c3.792 0 7.602-1.27 11.445-3.832L16 .798zm0 2.394l-.337.213C12.245 5.52 8.805 6.706 5.352 6.952L5 6.972V17.5c0 6.831 4.716 11.357 10.713 11.497L16 29c6.133 0 11-4.56 11-11.5V6.972l-.352-.02c-3.453-.246-6.893-1.432-10.311-3.547L16 3.192zm7 7.394L24.414 12 13.5 22.914 7.586 17 9 15.586l4.5 4.499 9.5-9.5z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-base font-semibold text-gray-700">Identify verified</p>
+                </div>
+            </div>
+
+            <div class="lg:w-2/3 lg:ml-10 lg:-mt-24">
+                <h3 class="pb-5 text-lg font-semibold pt-7 lg:text-2xl lg:pb-4">About</h3>
+                <div class="border-b border-gray-300 lg:pb-5">
+                    <div class="flex items-start justify-start mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-6 top-1 font-extralight">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        </svg>
+                        <p class="ml-2 text-base font-medium">Lives in Accra, Ghana</p>
+                    </div>
+                    <div class="flex items-start justify-start mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-6 top-1 font-extralight">
+                            <path fill-rule="evenodd"
+                                d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="ml-2 text-base font-medium">Speaks English, Français</p>
+                    </div>
+                    <div class="flex items-start justify-start pb-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-6 top-1 font-extralight">
+                            <path fill-rule="evenodd"
+                                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                            <path
+                                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                        </svg>
+                        <p class="ml-2 text-base font-medium">Work: Interior designer, Gardener.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--3 6-->
+        <section class="flex flex-col w-full lg:flex-row lg:items-start lg:justify-start">
+            <div
+                class="flex flex-wrap items-start justify-between w-full lg:flex-col lg:w-1/3 lg:px-5 lg:pb-5 lg:mr-10 lg:rounded-b-xl lg:border-b lg:border-l lg:border-r lg:border-gray-300">
+                <h3 class="w-full pt-8 mb-5 text-lg font-bold lg:font-semibold lg:text-xl">Akua confirmed</h3>
+
+                <div class="flex items-start justify-start w-1/2 mb-3 lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-6 top-1 font-extralight">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2 text-base font-normal text-gray-700 ">Identify verified</p>
+                </div>
+
+                <div class="flex items-start justify-start w-1/2 mb-3 lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-6 top-1 font-extralight">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2 text-base font-normal text-gray-700 ">Email address</p>
+                </div>
+
+                <div class="flex items-start justify-start w-1/2 mb-3 lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-6 top-1 font-extralight">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-2 text-base font-normal text-gray-700 ">Phone number</p>
+                </div>
+            </div>
+
+            <div class="border-b border-gray-300 pb-7 lg:w-2/3 m-left swiper-container">
+                <h3 class="pb-5 text-lg font-semibold pt-7 lg:text-2xl">Akua’s listings</h3>
+                <div class="flex items-start lg:my-2 swiper-wrapper">
+                    <a href="../pages/show.html" class="relative w-full swiper-slide lg:pr-2 lg:w-1/2 md:w-1/2 lg:mb-0">
+                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                            <img src="/assets/images/5.jpg" alt=""
+                                class="absolute object-cover w-full h-full rounded-lg shadow-sm ">
+                        </div>
+
+                        <div class="flex items-center justify-start my-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                viewBox="0 0 20 20" fill="#ffb400">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <p class="text-sm text-gray-600 lg:text-sm"> 4.84 (5)</p>
+                        </div>
+                        <ol class="flex flex-row text-base font-normal text-gray-700">
+                            <li class="mr-1">Entire home/apt </li>
+                            <li> <span> . </span>House </li>
+                        </ol>
+                        <h4 class="text-base font-normal text-gray-700">The Akua Tree House</h4>
+                        <button
+                            class="absolute px-2 py-1 text-xs font-bold text-center text-gray-700 uppercase transition bg-gray-100 border-transparent rounded-sm focus:outline-none hover:shadow-sm hover:bg-white top-2 left-2 hover:text-black">
+                            Superhost
+                        </button>
+                    </a>
+
+                    <a href="#" class="relative w-full swiper-slide lg:pl-2 lg:w-1/2 md:w-1/2 lg:mb-0">
+                        <div class="relative bg-gray-200 border rounded-lg shadow-inner pb-2/3">
+                            <img src="/assets/images/8.jpg" alt=""
+                                class="absolute object-cover w-full h-full rounded-lg shadow-sm">
+                        </div>
+
+                        <div class="flex items-center justify-start my-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-500 fill-current"
+                                viewBox="0 0 20 20" fill="#ffb400">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <p class="text-sm text-gray-600 lg:text-sm"> 4.70 (27)</p>
+                        </div>
+                        <ol class="flex flex-row text-base font-normal text-gray-700">
+                            <li class="mr-1">Private room </li>
+                            <li> <span> . </span>Guesthouse </li>
+                        </ol>
+                        <h4 class="text-base font-normal text-gray-700">The Akua Tree Flat</h4>
+
+                        <button
+                            class="absolute px-2 py-1 text-xs font-bold text-center text-gray-700 uppercase transition bg-gray-100 border-transparent rounded-sm focus:outline-none ring-offset-transparent hover:shadow-sm hover:bg-white top-2 left-2 lg:left-4 hover:text-black">
+                            Superhost
+                        </button>
+                    </a>
+
+                </div>
+                <!--Swiper nav btn-->
+                <div class="block">
+                    <div
+                        class="bg-white border border-gray-200 rounded-full swiper-button-next swiper-button-black swiper_btn">
+                    </div>
+                    <div
+                        class="bg-white border border-gray-200 rounded-full swiper-button-prev swiper-button-black swiper_btn">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Comments-->
+        <section class="flex flex-wrap w-full mx-auto lg:justify-end pt-7 lg:pl-14">
+            <div class="flex items-center justify-start pb-5 lg:pl-3 lg:w-2/3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-700 fill-current stroke-1 h-9 w-7"
+                    viewBox="0 0 20 20" fill="#ffb400">
+                    <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <p class="text-lg font-semibold lg:text-2xl "> 31 reviews</p>
+            </div>
+
+            <!--Guest tab is open by default-->
+            <div x-data="{ tab: 'guests'}"
+                class="flex items-center justify-start w-full border-b border-gray-200 lg:pl-3 md:pl-3 lg:w-2/3">
+
+                <div class="w-full">
+                    <nav class="w-full mb-4 text-base font-normal text-gray-600 border-b border-gray-200">
+                        <ul class="flex flex-row pb-4 space-x-3 ">
+                            <li class="transition rounded-sm hover:bg-gray-100 ">
+                                <a href="#from-guest" :class="{ 'active': tab === 'guests' }" @click="tab = 'guests'">
+                                    <span class="p-2">From guests (26)</span>
+                                </a>
+                            </li>
+                            <li class="transition rounded-sm hover:bg-gray-100">
+                                <a href="#from-hosts" :class="{ 'active': tab === 'hosts' }" @click="tab = 'hosts'">
+                                    <span class="p-2">From hosts (5)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <article x-show="tab === 'guests'" x-show="open" class="py-2"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90">
+
+                        <div class="mb-6 space-y-1 text-gray-600">
+                            <div class="flex items-start justify-between ">
+                                <div>
+                                    <h3 class="text-lg font-medium">The Akua Tree House</h3>
+                                    <p class="text-sm font-normal text-gray-400">January 2021</p>
+                                </div>
+
+                                <div class="flex items-end bg-gray-200 border rounded-lg ">
+                                    <a href="/pages/show.html">
+                                        <img src="/assets/images/5.jpg" alt=""
+                                            class="object-cover border border-gray-200 rounded-lg shadow-sm"
+                                            style="width: 5rem!important;height: 3.5rem;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Perfect stay, impeccable welcome ... Highly
+                                    recommendable
+                                    ...</p>
+
+                            </div>
+                        </div>
+                        <div class="mb-6 space-y-1 text-gray-600">
+                            <div class="flex items-start justify-between ">
+                                <div>
+                                    <h3 class="text-lg font-medium">The Akua Tree Flats</h3>
+                                    <p class="text-sm font-normal text-gray-400">February 2021</p>
+                                </div>
+
+                                <div class="flex items-end bg-gray-200 border rounded-lg ">
+                                    <img src="/assets/images/8.jpg" alt=""
+                                        class="object-cover border border-gray-200 rounded-lg shadow-sm"
+                                        style="width: 5rem!important;height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="flex flex-col mb-2">
+                                <p class="text-base font-normal leading-tight">Very skeptical in nature, I was more than
+                                    pleasantly
+                                    surprised by the standing and comfort of this two bedroom living room. Very well
+                                    connected with nearby taxis for your trips. Two security guards are at the main
+                                    entrance which allowed me to be reassured and to sleep peacefully without fear for
+                                    my first stay. For fans of breakfasts a great pastry is located three minutes from
+                                    the residence with the best chocolate bread and very appetizing croissant. My next
+                                    return to the country is with Sonplay residence without hesitation !!! Thank you for
+                                    your availability Mr Landry.
+                                    ...</p>
+                                <div class="flex items-center justify-start my-2">
+                                    <a href="#" class="mr-2">
+                                        <img src="/assets/images/avatar-client-2.svg" alt=""
+                                            class="flex-shrink-0 w-12 h-12 rounded-full ">
+                                    </a>
+                                    <div class="flex-1 text-base">
+                                        <p class="font-semibold leading-none">Sandra Kwetey</p>
+                                        <p class="text-sm font-normal text-gray-400">Joined in 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col ml-14 pt">
+                                <p class="text-base font-normal leading-tight">Thank you, we would be happy receiving
+                                    you again.</p>
+                                <div class="flex items-start justify-start my-2">
+                                    <a href="#" class="mr-2">
+                                        <img src="/assets/images/avatar-1.svg" alt=""
+                                            class="flex-shrink-0 w-12 h-12 rounded-full ">
+                                    </a>
+                                    <div class="flex-1 text-base">
+                                        <p class="font-semibold leading-none">Response from Akua</p>
+                                        <p class="text-sm font-normal text-gray-400">Joined in 2015</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article x-show="tab === 'hosts'" x-show="open" class="py-2"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90">
+                        <div class="mb-6 text-gray-600">
+                            <p class="pb-4 text-sm font-normal text-gray-400">January 2021</p>
+
+                            <div class="flex flex-col">
+                                <p class="text-base font-normal">Landry was a great guest, punctual when checking in, he
+                                    returned the apartment in clean conditions I highly recommend it and hope to receive
+                                    it during his next visit to Casablanca !!
+                                </p>
+                                <div class="flex items-center justify-start my-2">
+                                    <a href="#" class="mr-2">
+                                        <img src="/assets/images/avartar-host-1.svg" alt=""
+                                            class="flex-shrink-0 w-12 h-12 rounded-full ">
+                                    </a>
+                                    <div class="flex-1 text-base">
+                                        <p class="font-semibold leading-none">Philippe, Chaingy, France</p>
+                                        <p class="text-sm font-normal text-gray-400">Joined in 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="flex w-2/3 mt-4">
+                <a href="#" class="text-sm font-semibold text-gray-800 underline">
+                    Report this profile
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="pt-10 text-sm bg-gray-100 border-t border-gray-300">
+        <div class="max-w-6xl px-5 pb-8 mx-auto border-b border-gray-300">
+            <div class="flex flex-wrap items-start justify-start">
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Airbnb</h5>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Careers</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">News</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Policies</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">help</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Diversity &
+                                Belonging</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Discover</h5>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Trust & Safety</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Travel Credit</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Gift Cards</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Airbnb Citizen</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                                Travel</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Things To Do <span
+                                    class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Business
+                                Travel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="mb-2 font-semibold tex-gray-700">Hosting</h5>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Why Host</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Hospitality</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Responsible
+                                Hosting</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Community
+                                Center</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Host an Experience
+                                <span class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Open House</a>
+                        </li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Donations <span
+                                    class="px-1 text-xs text-white rounded bg-cyan">New</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="w-full mb-6 lg:w-1/4 lg:mb-0">
+                    <h5 class="flex items-start justify-start mb-2 font-semibold tex-gray-700">
+                        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="w-3 h-3 mr-2 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-6.932 0-5.046 7.85-5.322 9h-3.487v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877c.188-2.824-.761-5.016 2.051-5.016z"
+                                fill="#3b5999" />
+                        </svg>
+                        <svg viewBox="0 0 512.00096 512.00096" class="w-3 h-3 mr-2 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm108.578125 373.410156c0 59.867188-48.707031 108.574219-108.578125 108.574219h-234.8125c-59.871094 0-108.578125-48.707031-108.578125-108.574219v-234.816406c0-59.871094 48.707031-108.578125 108.578125-108.578125h234.816406c59.867188 0 108.574219 48.707031 108.574219 108.578125zm0 0" />
+                            <path
+                                d="m256 116.003906c-77.195312 0-139.996094 62.800782-139.996094 139.996094s62.800782 139.996094 139.996094 139.996094 139.996094-62.800782 139.996094-139.996094-62.800782-139.996094-139.996094-139.996094zm0 249.976563c-60.640625 0-109.980469-49.335938-109.980469-109.980469 0-60.640625 49.339844-109.980469 109.980469-109.980469 60.644531 0 109.980469 49.339844 109.980469 109.980469 0 60.644531-49.335938 109.980469-109.980469 109.980469zm0 0" />
+                            <path
+                                d="m399.34375 66.285156c-22.8125 0-41.367188 18.558594-41.367188 41.367188 0 22.8125 18.554688 41.371094 41.367188 41.371094s41.371094-18.558594 41.371094-41.371094-18.558594-41.367188-41.371094-41.367188zm0 52.71875c-6.257812 0-11.351562-5.09375-11.351562-11.351562 0-6.261719 5.09375-11.351563 11.351562-11.351563 6.261719 0 11.355469 5.089844 11.355469 11.351563 0 6.257812-5.09375 11.351562-11.355469 11.351562zm0 0" />
+                        </svg>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" class="w-3 h-3 text-gray-700" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path style="fill:#03A9F4;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+        c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+        c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+        c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+        c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+        c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+        C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+        C480.224,136.96,497.728,118.496,512,97.248z" />
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+
+                    </h5>
+                    <ul class="space-y-1 leading-loose">
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Terms</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Pricacy</a></li>
+                        <li> <a href="#" class="font-medium text-gray-600 transition hover:underline">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center max-w-6xl p-5 mx-auto lg:px-0">
+            <p class="pl-1 text-sm text-gray-600">&copy; 2020 Airbnb Copy Made with Tailwind</p>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 220px
+                220: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 5
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

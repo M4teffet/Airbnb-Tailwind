@@ -9,12 +9,12 @@
 
     <!--Swiper resources-->
     <link href="/assets/css/swiper-bundle.min.css" rel="stylesheet">
-
     <!--Tailwind-->
     <link href="/style.css" rel="stylesheet">
 
     <!--Alpinejs-->
-    <script src="/assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
 
     <title>Akua's Profile-Airbnb</title>
 </head>
@@ -223,7 +223,7 @@
                     <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
-                <p class="text-lg font-semibold lg:text-2xl "> 31 reviews</p>
+                <p class="text-lg font-semibold lg:text-2xl"> 31 reviews</p>
             </div>
 
             <!--Guest tab is open by default-->
@@ -246,19 +246,15 @@
                         </ul>
                     </nav>
 
-                    <article x-show="tab === 'guests'" x-show="open" class="py-2"
-                        x-transition:enter="transition ease-out duration-300"
-                        x-transition:enter-start="opacity-0 transform scale-90"
-                        x-transition:enter-end="opacity-100 transform scale-100"
-                        x-transition:leave="transition ease-in duration-300"
-                        x-transition:leave-start="opacity-100 transform scale-100"
-                        x-transition:leave-end="opacity-0 transform scale-90">
+                    <article x-show="tab === 'guests' " class="py-2">
 
                         <div class="mb-6 space-y-1 text-gray-600">
                             <div class="flex items-start justify-between ">
-                                <div>
+                                <div class="">
                                     <h3 class="text-lg font-medium">The Akua Tree House</h3>
-                                    <p class="text-sm font-normal text-gray-400">January 2021</p>
+                                    <p class="text-sm font-normal text-gray-400">
+                                        January 2021
+                                    </p>
                                 </div>
 
                                 <div class="flex items-end bg-gray-200 border rounded-lg ">
@@ -280,7 +276,9 @@
                             <div class="flex items-start justify-between ">
                                 <div>
                                     <h3 class="text-lg font-medium">The Akua Tree Flats</h3>
-                                    <p class="text-sm font-normal text-gray-400">February 2021</p>
+                                    <p class="text-sm font-normal text-gray-400">
+                                        February 2021
+                                    </p>
                                 </div>
 
                                 <div class="flex items-end bg-gray-200 border rounded-lg ">
@@ -328,23 +326,18 @@
                         </div>
                     </article>
 
-                    <article x-show="tab === 'hosts'" x-show="open" class="py-2"
-                        x-transition:enter="transition ease-out duration-300"
-                        x-transition:enter-start="opacity-0 transform scale-90"
-                        x-transition:enter-end="opacity-100 transform scale-100"
-                        x-transition:leave="transition ease-in duration-300"
-                        x-transition:leave-start="opacity-100 transform scale-100"
-                        x-transition:leave-end="opacity-0 transform scale-90">
-                        <div class="mb-6 text-gray-600">
-                            <p class="pb-4 text-sm font-normal text-gray-400">January 2021</p>
+                    <article x-show="tab === 'hosts' " class="py-2">
+                        <div class="mb-6 text-gray-600 ">
+                            <p class="pb-4 text-sm font-normal text-gray-400 ">January 2021</p>
 
-                            <div class="flex flex-col">
-                                <p class="text-base font-normal">Landry was a great guest, punctual when checking in, he
+                            <div class="flex flex-col ">
+                                <p class="text-base font-normal ">Landry was a great guest, punctual when checking in,
+                                    he
                                     returned the apartment in clean conditions I highly recommend it and hope to receive
                                     it during his next visit to Casablanca !!
                                 </p>
-                                <div class="flex items-center justify-start my-2">
-                                    <a href="#" class="mr-2">
+                                <div class="flex items-center justify-start my-2 ">
+                                    <a href=" #" class="mr-2">
                                         <img src="/assets/images/avartar-host-1.svg" alt=""
                                             class="flex-shrink-0 w-12 h-12 rounded-full ">
                                     </a>
